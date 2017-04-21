@@ -43,6 +43,8 @@ $none = false;
 
 $email="cenoki@uvm.edu";
 
+$comment= "";
+
 
 
 // SECTION: 1d form erros flags
@@ -57,6 +59,8 @@ $activityERROR = false;
 $totalChecked = 0;
 
 $emailERROR = false;
+
+$commentERROR = false;
 
 
 
@@ -150,7 +154,8 @@ $dataRecord[] = $none;
 $email = filter_var($_POST["txtEmail"], FILTER_SANITIZE_EMAIL);
 $dataRecord[] = $email;
 
-
+$comment = htmlentities($_POST["txtComment"], ENT_QUOTES, ÜTF-8);
+$dataRecord[] = $comment;
 
 
 // SECTION: 2c Validation
@@ -194,6 +199,10 @@ if ($email == "") {
     $emailERROR = true;
 }
 
+if ($comment == "") {
+    $errorMsg[] = "Please enter your comment";
+    $commentERROR = true;
+}
 
 
 
@@ -417,7 +426,8 @@ $mailed = sendMail ($to, $cc, $bcc, $from, $subject, $message);
             <select id="1stcountry"
                     name="1stcountry"
                     tabindex="118">
-                <option <?php if($education == "No Diploma") print "selected"; ?>
+                
+		    <option <?php if($education == "No Diploma") print "selected"; ?>
                     value="No Diploma">No Diploma</option>
                 
             </select>
@@ -500,6 +510,23 @@ $mailed = sendMail ($to, $cc, $bcc, $from, $subject, $message);
                     >
             </p>
 	</fieldset>
+	        <fieldset class="comment">
+            <legend>Comments</legend>
+            <p>
+                <label class="required text-field" for="txtFirstName">Comment</label>
+                <input autofocus
+                       <?php if ($commentERROR) print 'class="mistake"'; ?>
+                       id="txtComment"
+                       maxlength="45"
+                       name="txtComment"
+                       onfocus="this.select()"
+                       placeholder="Enter your comment"
+                       tabindex="200"
+                       type="text"
+                       value="<?php print $comment; ?>"
+                >
+            </p>
+	    </fieldset>
 			
 	<fieldset class="buttons">
             <legend></legend>

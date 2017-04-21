@@ -31,8 +31,8 @@ $lastName = "";
 
 $gender="Female";
 
-$education = "Camels Hump";
-$educationERROR = false;
+$country = "Camels Hump";
+$countryERROR = false;
 
 $recycle = false;
 $compost = false;
@@ -101,8 +101,8 @@ $dataRecord[] = $lastName;
 $gender = htmlentities($_POST["radGender"], ENT_QUOTES, UTF-8);
 $dataRecord[] = $gender;
 
-$education = htmlentities($_POST["1stEducations"], ENT_QUOTES, ÜTF-8);
-$dataRecord[] = $education;
+$country = htmlentities($_POST["1stCountry"], ENT_QUOTES, ÜTF-8);
+$dataRecord[] = $country;
 
 if (isset($_POST["chkRecycle"])) {
     $recycle = true;
@@ -176,7 +176,7 @@ if ($gender != "Female" AND $gender !="Male" AND $gender !="NotAnswer"){
     $genderERROR = true;
 }
 
-if ($education == "1"){
+if ($country == "1"){
     $errorMsg[] = "Please choose one option";
     $educationERROR = true;
 }
@@ -412,23 +412,14 @@ $mailed = sendMail ($to, $cc, $bcc, $from, $subject, $message);
             </p>
             </fieldset>
 
-            <fieldset class="listbox <?php if ($educationERROR) print 'mistake'; ?>">
-            <legend>Education Level:</legend>
-            <select id="1steducations"
-                    name="1steducations"
+            <fieldset class="listbox <?php if ($countryERROR) print 'mistake'; ?>">
+            <legend>Country:</legend>
+            <select id="1stcountry"
+                    name="1stcountry"
                     tabindex="118">
                 <option <?php if($education == "No Diploma") print "selected"; ?>
                     value="No Diploma">No Diploma</option>
-                <option <?php if($education == "High School Diploma") print "selected"; ?>
-                    value="High School Diploma">High School Diploma</option>
-                <option <?php if($education == "Associate's Degree") print "selected"; ?>
-                    value="Associate's Degree">Associate's Degree</option>
-                <option <?php if($education == "Bachelor's Degree") print "selected"; ?>
-                    value="Bachelor's Degree">Bachelor's Degree</option>
-                <option <?php if($education == "Master's Degree") print "selected"; ?>
-                    value="Master's Degree">Master's Degree</option>
-                <option <?php if($education == "Doctoral Degree") print "selected"; ?>
-                    value="Doctoral Degree">Doctoral Degree</option>
+                
             </select>
             </fieldset>
         </fieldset>

@@ -1,0 +1,145 @@
+/* CSS designed by Cristine Sudo Enoki */
+
+/* ===================  General Section  ==================================== */
+
+* {
+    font-size: 12pt;  /* sets the font size for all elements. */
+    /* look up reset style sheet */
+}
+
+body {
+    background-color: #ffffff;
+    background-image: url(redbg.gif);
+    margin-left: 6em;
+}
+
+h1 {
+    color: #000000;
+    font-family: "sans-serif";
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+h2 {
+    color: #000000;
+    font-family: "sans-serif";
+    font-weight: bold;
+    font-size: 1.25em;
+}
+
+h3 {
+    color: black;
+    font-family: "times new roman";
+    font-weight: bold;
+    font-size: 1em;
+}
+
+h4 {
+    color: #000000;
+    font-family: "sans-serif";
+    font-weight: bold;
+    font-size: .8em;	
+}
+
+h5 { 
+    color: #000000;
+    font-family: "sans-serif";
+    font-weight: bold;
+    font-size: .6em;	
+}
+
+h6 {
+    color: #000000;
+    font-family: "sans-serif";
+    font-weight: bold;
+    font-size: .5em;	
+}
+
+ol ol ol li {
+    list-style: lower-alpha
+}
+
+ol ol li {
+    font-weight: normal;
+    list-style: decimal;
+    padding-top: 0em
+}
+
+ol li {
+    font-weight: bold;
+    list-style: upper-roman;
+    padding-top: 1em
+}
+
+ul ul ul li { 
+    list-style: circle;
+}
+
+ul ul li { 
+    list-style: square;
+}
+
+ul li { 
+    list-style: disc;
+}
+
+.portrait img{
+    width: 150px;
+    float: left;
+}
+
+
+aside {
+    float: right;
+    border: solid thin black;
+    width: 30%;
+    clear: both;
+}
+
+.quote p{
+    font-size: 16pt;
+}
+
+.firstimg img {
+    width: 700px;
+}
+/* ===================  Header Section  ==================================== */
+/* now i would have a section that corresponds to my html sections.          */
+header {
+    background-color: #dddddd;
+}
+
+/* ===================  Navigation Section  ================================= */
+
+nav ul li{
+    list-style-type: none;
+    display: inline-block;
+    padding: 1%;
+}
+
+
+/* ===================  Home Page        ==================================== */
+/* -------------------------------------------------------------------------- */
+#home {  
+    background-color: #aaaaaa;
+}
+
+#home p {
+    /* this rule will give all the paragraphs on the home page a first line  */
+    /* indent of 3 em. it only effects paragraphs that are contained inside  */
+    /* the element with the id of home, this replaces using an embeded or    */
+    /* level style */
+    text-indent: 3em;
+}
+
+/* ===================  General Class Section  ============================= */
+/* I can add any generic classes here. Technically i can place these rules   */
+/* anywhere in the style sheet. This just helps to organize everything.     */
+.firstLine {
+    text-indent: 3em;
+}
+/* 
+    Created on : Apr 2, 2017, 10:15:43 PM
+    Author     : Cristine Enoki
+*/
+

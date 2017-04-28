@@ -10,7 +10,7 @@
 body {
     background-color: #ffffff;
     background-image: url(redbg.gif);
-    margin-left: 6em;
+    margin: 1% 6%;
 }
 
 h1 {
@@ -83,9 +83,18 @@ ul li {
     list-style: disc;
 }
 
+article p{
+    width: 68%;
+}
+
+figure{
+    margin: 1%;
+}
+
 .portrait img{
-    width: 150px;
+    width: 130px;
     float: left;
+    margin: 2%;
 }
 
 
@@ -94,14 +103,51 @@ aside {
     border: solid thin black;
     width: 30%;
     clear: both;
+    margin-bottom: 2%;
 }
 
-.quote p{
+aside h1 {
     font-size: 16pt;
+    margin: 0%;
+    text-align: center;
+    background-color: lightgreen;
+}
+
+aside p {
+    padding: 0% 4%;
+}
+
+.students {
+    width: 30%;
+    min-width: 8.5em;
+    background-color: #ffffff;
+}
+
+.portrait{
+    margin: 0%;
+}
+.quote {
+    font-size: 14pt;
+    font-style: italic;
+    text-align: justify;
 }
 
 .firstimg img {
-    width: 700px;
+    width: 70%;
+    min-width: 315px;
+}
+
+.flag img {
+    width: 92%;
+    margin: 4%;
+}
+
+.name {
+    text-align: right;
+}
+
+.information p {
+    width: 95%;
 }
 /* ===================  Header Section  ==================================== */
 /* now i would have a section that corresponds to my html sections.          */
@@ -117,7 +163,11 @@ nav ul li{
     padding: 1%;
 }
 
+/* ===================  Footer Section  ================================= */
 
+footer{
+    font-style: italic;
+}
 /* ===================  Home Page        ==================================== */
 /* -------------------------------------------------------------------------- */
 #home {  

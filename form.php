@@ -1,9 +1,7 @@
 <?php
 include ("top.php");
-
  
 // SECTION: 1 Initialize variables
-
 // SECTION: 1a.
 // We print out the post array so that we can see our form is working.
 // if ($debug){  // later you can uncomment the if statement
@@ -11,20 +9,9 @@ print '<p>Post Array: </p><pre>';
 print_r($_POST);
 print '</pre>';
 //}
-
-
-
 //SECTION: 1b Security
-
-
-
 $thisURL = $domain . $phpSelf;
-
-
-
-
 // SECTION: 1c form variables
-
 $firstName = "";
 
 $lastName = "";
@@ -32,70 +19,46 @@ $lastName = "";
 $gender="Female";
 
 $country = "Camels Hump";
-$countryERROR = false;
 
-$recycle = false;
-$compost = false;
-$walknBike = false;
-$bottleWater = false;
-$reusableBags = false;
-$none = false;
+$brazil = false;
+$france = false;
+$indonesia = false;
+$southkorea = false;
+$spain = false;
+$sweden = false;
+$uk= false;
 
-$email="cenoki@uvm.edu";
+$email="";
 
 $comment= "";
-
-
-
 // SECTION: 1d form erros flags
-
 $firstNameERROR = false;
 
 $lastNameERROR = false;
 
 $genderERROR = false;
 
-$activityERROR = false;
+$countryERROR = false;
+
+$visitedERROR = false;
 $totalChecked = 0;
 
 $emailERROR = false;
 
 $commentERROR = false;
-
-
-
 // SECTION: 1e misc variables
-
-
 $errorMsg = array();
-
-
 $dataRecord = array ();
-
-
 $mailed = false;
-
-
-
 // SECTION: 2 Process for when the form is submitted
-
 if (isset($_POST["btnSubmit"])){
-
-
-
 // SECTION: 2a Security
-
 if (!securityCheck($thisURL)) {
     $msg = "<p>Sorry you cannot access this page. ";
     $msg.= "Security breach detected and reported.</p>";
     die($msg);
 }
-
-
-
 // SECTION: 2b Sanitize data
-
-
 $firstName = htmlentities($_POST["txtFirstName"], ENT_QUOTES, ÜTF-8);
 $dataRecord[] = $firstName;
 
@@ -108,55 +71,67 @@ $dataRecord[] = $gender;
 $country = htmlentities($_POST["1stCountry"], ENT_QUOTES, ÜTF-8);
 $dataRecord[] = $country;
 
-if (isset($_POST["chkRecycle"])) {
-    $recycle = true;
+if (isset($_POST["chkBrazil"])) {
+    $brazil = true;
     $totalChecked++;
 } else {
-    $recycle = false;
+    $brazil = false;
 }
-$dataRecord[] = $recycle;
-if (isset($_POST["chkCompost"])) {
-    $compost = true;
+$dataRecord[] = $brazil;
+
+if (isset($_POST["chkFrance"])) {
+    $france = true;
     $totalChecked++;
 } else {
-    $compost = false;
+    $france = false;
 }
-$dataRecord[] = $compost;
-if (isset($_POST["chkWalknBike"])) {
-    $walknBike = true;
+$dataRecord[] = $france;
+
+if (isset($_POST["chkIndonesia"])) {
+    $indonesia = true;
     $totalChecked++;
 } else {
-    $walknBike = false;
+    $indonesia = false;
 }
-$dataRecord[] = $walknBike;
-if (isset($_POST["chkBottleWater"])) {
-    $bottleWater = true;
+$dataRecord[] = $indonesia;
+
+if (isset($_POST["chkSouthKorea"])) {
+    $southkorea = true;
     $totalChecked++;
 } else {
-    $bottleWater = false;
+    $southkorea = false;
 }
-$dataRecord[] = $bottleWater;
-if (isset($_POST["chkReusableBags"])) {
-    $reusableBags = true;
+$dataRecord[] = $southkorea;
+
+if (isset($_POST["chkSpain"])) {
+    $spain = true;
     $totalChecked++;
 } else {
-    $reusableBags = false;
+    $spain = false;
 }
-$dataRecord[] = $reusableBags;
-if (isset($_POST["chkNone"])) {
-    $none = true;
+$dataRecord[] = $spain;
+
+if (isset($_POST["chkSweden"])) {
+    $sweden = true;
     $totalChecked++;
 } else {
-    $none = false;
+    $sweden = false;
 }
-$dataRecord[] = $none;
+$dataRecord[] = $sweden;
+
+if (isset($_POST["chkUnitedKingdom"])) {
+    $uk = true;
+    $totalChecked++;
+} else {
+    $uk = false;
+}
+$dataRecord[] = $uk;
         
 $email = filter_var($_POST["txtEmail"], FILTER_SANITIZE_EMAIL);
 $dataRecord[] = $email;
 
 $comment = htmlentities($_POST["txtComment"], ENT_QUOTES, ÜTF-8);
 $dataRecord[] = $comment;
-
 
 // SECTION: 2c Validation
 
@@ -186,11 +161,6 @@ if ($country == "1"){
     $educationERROR = true;
 }
 
-if ($totalChecked < 1){
-    $errorMsg[] = "Please choose at least one option";
-    $activityERROR = true;
-}
-
 if ($email == "") {
     $errorMsg[] = "Please enter your email address";
     $emailERROR = true;
@@ -204,50 +174,23 @@ if ($comment == "") {
     $commentERROR = true;
 }
 
-
-
 // SECTION: 2d Process Form
-
-
 
 if (!$errorMsg){
     if ($debug)
         print "<p>Form is valid</p>";
-
-
-
-
 // SECTION: 2e Save data
-
-
-
     $fileExt = ".csv";
     $myFileName = "data/registration";
     $filename = $myFileName . $fileExt;
-
     if ($debug){
         print "\n\n<p>filename is " . $filename;
     }
-
-
     $file = fopen($filename, 'a');
-
-
     fputcsv($file, $dataRecord);;
-
-
 fclose($file);
-
-
-
-
 // SECTION: 2f Create message
-
-
-
-
 $message = '<h2 class="form-message">Your information:</h2>';
-
 foreach ($_POST as $htmlName => $value) {
     $message .="<p>";
     
@@ -261,35 +204,17 @@ foreach ($_POST as $htmlName => $value) {
     
     $message .= " = " . htmlentities($value, ENT_QUOTES, ÜTF-8) . "</P>";
 }
-
-
-
-
-
 // SECTION: 2g mail to user
-
-
 $to = $email;
 $cc = "";
 $bcc = "";
-
-$from = "Climate Change <customer.service@climatechange.com>";
-
-
+$from = "Diversity in UVM <customer.service@diversityinuvm.com>";
 $todaysDate = strftime("%x");
 $subject = "Subscription: ". $todaysDate;
-
 $mailed = sendMail ($to, $cc, $bcc, $from, $subject, $message);
-
 }
-
 }
-
-
-
-
 // SECTION: 3 Display form
-
 ?>
 
 <article id="main">
@@ -315,8 +240,8 @@ $mailed = sendMail ($to, $cc, $bcc, $from, $subject, $message);
       print $message;
  }else {
  
-	print '<h2>Subscribe to get more information!</h2>';
-	print '<p class="form-heading">If you liked this website subscribe to receive more information and news about climate change.</p>';
+	print '<h2>Share things about your country!</h2>';
+	print '<p class="form-heading">If you are an international student and want your country presented in this website, fill out this form and we will send you more information!</p>';
 	
 	
 	
@@ -434,61 +359,70 @@ $mailed = sendMail ($to, $cc, $bcc, $from, $subject, $message);
             </fieldset>
         </fieldset>
         
-        <fieldset class="checkbox <?php if ($activityERROR) print 'mistake'; ?>">
-            <legend>Check the practices you do that are environmentally friendly</legend>
+        <fieldset class="checkbox <?php if ($visitedERRORERROR) print 'mistake'; ?>">
+            <legend>Please check the countries you have visited that we covered in this website.</legend>
             <p>
                 <label class="check-field">
-                    <input <?php if ($recycle) print "checked";?>
-                        id="chkRecycle"
-                        name="chkRecycle"
+                    <input <?php if ($brazil) print "checked";?>
+                        id="chkBrazil"
+                        name="chkBrazil"
                         tabindex="120"
                         type="checkbox"
-                        value="Recycle">Recycle</label>
+                        value="Brazil">Brazil</label>
             </p>
             <p>
                 <label class="check-field">
-                    <input <?php if ($compost) print "checked";?>
-                        id="chkCompost"
-                        name="chkCompost"
+                    <input <?php if ($france) print "checked";?>
+                        id="chkFrance"
+                        name="chkFrance"
                         tabindex="121"
                         type="checkbox"
-                        value="Compost">Compost</label>
+                        value="France">France</label>
             </p>
             <p>
                 <label class="check-field">
-                    <input <?php if ($walknBike) print "checked";?>
-                        id="chkWalknBike"
-                        name="chkWalknBike"
+                    <input <?php if ($indonesia) print "checked";?>
+                        id="chkIndonesia"
+                        name="chkIndonesia"
                         tabindex="122"
                         type="checkbox"
-                        value="WalknBike">Walk and/or bike to places</label>
+                        value="Indonesia">Indonesia</label>
             </p>
             <p>
                 <label class="check-field">
-                    <input <?php if ($bottleWater) print "checked";?>
-                        id="chkBottleWater"
-                        name="chkBottleWater"
+                    <input <?php if ($southkorea) print "checked";?>
+                        id="chkSouthKorea"
+                        name="chkSouthKorea"
                         tabindex="123"
                         type="checkbox"
-                        value="BottleWater">Use reusable bottles for water</label>
+                        value="SouthKorea">South Korea</label>
             </p>
             <p>
                 <label class="check-field">
-                    <input <?php if ($reusableBags) print "checked";?>
-                        id="chkReusableBags"
-                        name="chkReusableBags"
+                    <input <?php if ($spain) print "checked";?>
+                        id="chkSpain"
+                        name="chkSpain"
                         tabindex="124"
                         type="checkbox"
-                        value="ReusableBags">Use reusable bags instead of plastic ones</label>
+                        value="Spain">Spain</label>
             </p>
             <p>
                 <label class="check-field">
-                    <input <?php if ($none) print "checked";?>
-                        id="chkNone"
-                        name="chkNone"
+                    <input <?php if ($sweden) print "checked";?>
+                        id="chkSweden"
+                        name="chkSweden"
                         tabindex="125"
                         type="checkbox"
-                        value="None">None of the above</label>
+                        value="Sweden">Sweden</label>
+            </p>
+            <p>
+                <label class="check-field">
+                    <input <?php if ($uk) print "checked";?>
+                        id="chkUnitedKingdom"
+                        name="chkUnitedKingdom"
+                        tabindex="125"
+                        type="checkbox"
+                        value="UnitedKingdom">United Kingdom</label>
             </p>
         </fieldset>
                 
@@ -511,7 +445,7 @@ $mailed = sendMail ($to, $cc, $bcc, $from, $subject, $message);
             </p>
 	</fieldset>
 	        <fieldset class="comment">
-            <legend>Comments</legend>
+            <legend>If you have any question or comment about the website please enter it bellow.</legend>
             <p>
                 <label class="required text-field" for="txtFirstName">Comment</label>
                 <input autofocus

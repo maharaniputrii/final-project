@@ -19,6 +19,14 @@
         print '</li>';
         
         print '<li class="';
+        if ($path_parts['filename'] == "france") {
+            print ' activePage ';
+        }
+        print '">';
+        print '<a href="france.php">France</a>';
+        print '</li>';
+        
+        print '<li class="';
         if ($path_parts['filename'] == "indonesia") {
             print ' activePage ';
         }
@@ -27,11 +35,11 @@
         print '</li>';
         
         print '<li class="';
-        if ($path_parts['filename'] == "uk") {
+        if ($path_parts['filename'] == "southkorea") {
             print ' activePage ';
         }
         print '">';
-        print '<a href="uk.php">United Kingdom</a>';
+        print '<a href="southkorea.php">South Korea</a>';
         print '</li>';
         
         print '<li class="';
@@ -40,6 +48,22 @@
         }
         print '">';
         print '<a href="spain.php">Spain</a>';
+        print '</li>';
+        
+        print '<li class="';
+        if ($path_parts['filename'] == "sweden") {
+            print ' activePage ';
+        }
+        print '">';
+        print '<a href="sweden.php">Sweden</a>';
+        print '</li>';
+        
+        print '<li class="';
+        if ($path_parts['filename'] == "uk") {
+            print ' activePage ';
+        }
+        print '">';
+        print '<a href="uk.php">United Kingdom</a>';
         print '</li>';
         
         print '<li class="';

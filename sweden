@@ -1,1 +1,86 @@
 
+<?php
+include ("top.php");
+?>
+
+       
+
+      
+        <article>
+            <h1>SWEDEN</h1>
+            <p>Sweden, or The Kingdom of Sweden, is a Scandivanian country in Northern Europe. Sweden is the third-largerst country in the European Union but the population in Sweden is really low than other parts of Europe.</p>
+            <p>Sweden is good for outdoor activities such as skating, hiking, canoeing, cycling, skiing, and horse-riding. </p>
+            
+            
+            <aside class="information">
+            <h1>Sweden</h1>
+            <figure class="flag">
+                <img src="images/flagbrasil.png" alt="Brazilian Flag">
+                <figcaption></figcaption>
+            </figure>
+            <p>Official language: Swedish</p>
+            <p>Capital: Stockholm</p>
+            <p>Government: Constitutional Monarchy and Parliamentary Democracy</p>
+            <p>Total area: 450,295 km2</p>
+            <p>Population: (2017est.) 10 014 873 </p>
+        </aside>
+            
+            
+            
+        <h2>Tourism</h2>
+        <p>There are some places to go in Swedish that attracted some tourists:</p>
+        <ul>
+            <li>ICEHOTEL</li>
+            <p>Ice Hotel is located in Jukkasjärv. It is known as the biggest hotel in the world that is made from  ice and snow.  </p>
+            <li>Vasa Museum</li>
+            <p>Vasa Museum is located in Stockholm. It is the most popular museum in Sweden and has been attracted million visitors annually. In 1628, the Swedish Imperial Fleet, or the Vasa battle ship. sank on its maiden voyage. The ship lay below the icy waters for more than three centuries until in 1960, a salvage operation took place. </p>
+            <li>Sigtuna</li>
+            <p>Sigtuna is the first town in Sweden. It is founded in AD 980. Sigtuna is only 45 minutes away from Stockholm by car.</p>
+           
+        </ul>
+        
+        <h2>Interesting facts</h2>
+        <ul>
+            <li>Sweden is known for producing great pop bands, DJs, and singers, including ABBA, The Cardigans, Ace of Base, Europe The Hives, Avicii, 
+                and Swedish House Mafia. </li>
+            <li>Sweden is the world's 3rd largest exporter of music after the United States and United Kingdom.</li> 
+            <li>A crayfish party is a traditional summer eating and drinking in Sweden. Some people eat it with
+                boiled crayfish served with boiled potato and dill. It always happen every August. </li>
+            <li>Soccer (football) and ice hockey are Sweden's main sports.</li>
+          
+        </ul>
+        
+        <h2>Food</h2>
+        <p>Here are some dishes that are traditionally from Swedish : </p>
+        <ul>
+            <li>"köttbullar" or meatballs, is the most famous dish from Sweden. It serves with potatoes, cream sauce and lingonberry jam.</li>
+            <li>“Julskinka”, a cured ham, boiled and breaded with eggs, mustard, and bread crumbs. Some people call it as a Christmas Ham.</li>
+            <li>“Flygande Jacob”, is a casserole based on chicken with bacon, peanuts, and banana.  </li>
+            <li>“Swedish Head-Cheese”, is a chopped pork pulled soft from a boiled pig-head and mixed with the gelatin from the skull with carious spices.</li>
+            <li>"Blodpudding", is a black sausage made from pig's blood and flour. Some people eat it with lingonberry jam.</li>
+        </ul>
+    <?php
+        include ("footer.php");
+    ?>   
+    </article>
+
+</body>
+    
+</html>
+
+        
+        
+        
+        
+        
+        
+        
+        
+<?php
+include ("footer.php");
+?>   
+    </article>
+
+</body>
+    
+</html>

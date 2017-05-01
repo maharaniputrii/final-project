@@ -13,13 +13,10 @@ print '</pre>';
 $thisURL = $domain . $phpSelf;
 // SECTION: 1c form variables
 $firstName = "";
-
 $lastName = "";
-
 $gender="Female";
-
-$country = "Camels Hump";
-
+$country="Argentina";
+$countries="";
 $brazil = false;
 $france = false;
 $indonesia = false;
@@ -27,24 +24,17 @@ $southkorea = false;
 $spain = false;
 $sweden = false;
 $uk= false;
-
 $email="";
-
 $comment= "";
 // SECTION: 1d form erros flags
 $firstNameERROR = false;
-
 $lastNameERROR = false;
-
 $genderERROR = false;
-
 $countryERROR = false;
-
+$countriesERROR = false;
 $visitedERROR = false;
 $totalChecked = 0;
-
 $emailERROR = false;
-
 $commentERROR = false;
 // SECTION: 1e misc variables
 $errorMsg = array();
@@ -61,16 +51,15 @@ if (!securityCheck($thisURL)) {
 // SECTION: 2b Sanitize data
 $firstName = htmlentities($_POST["txtFirstName"], ENT_QUOTES, ÜTF-8);
 $dataRecord[] = $firstName;
-
 $lastName = htmlentities($_POST["txtLastName"], ENT_QUOTES, UTF-8);
 $dataRecord[] = $lastName;
-
 $gender = htmlentities($_POST["radGender"], ENT_QUOTES, UTF-8);
 $dataRecord[] = $gender;
-
 $country = htmlentities($_POST["1stCountry"], ENT_QUOTES, ÜTF-8);
 $dataRecord[] = $country;
-
+	
+$countries = htmlentities($_POST["txtCountries"], ENT_QUOTES, ÜTF-8);
+$dataRecord[] = $countries;
 if (isset($_POST["chkBrazil"])) {
     $brazil = true;
     $totalChecked++;
@@ -78,7 +67,6 @@ if (isset($_POST["chkBrazil"])) {
     $brazil = false;
 }
 $dataRecord[] = $brazil;
-
 if (isset($_POST["chkFrance"])) {
     $france = true;
     $totalChecked++;
@@ -86,7 +74,6 @@ if (isset($_POST["chkFrance"])) {
     $france = false;
 }
 $dataRecord[] = $france;
-
 if (isset($_POST["chkIndonesia"])) {
     $indonesia = true;
     $totalChecked++;
@@ -94,7 +81,6 @@ if (isset($_POST["chkIndonesia"])) {
     $indonesia = false;
 }
 $dataRecord[] = $indonesia;
-
 if (isset($_POST["chkSouthKorea"])) {
     $southkorea = true;
     $totalChecked++;
@@ -102,7 +88,6 @@ if (isset($_POST["chkSouthKorea"])) {
     $southkorea = false;
 }
 $dataRecord[] = $southkorea;
-
 if (isset($_POST["chkSpain"])) {
     $spain = true;
     $totalChecked++;
@@ -110,7 +95,6 @@ if (isset($_POST["chkSpain"])) {
     $spain = false;
 }
 $dataRecord[] = $spain;
-
 if (isset($_POST["chkSweden"])) {
     $sweden = true;
     $totalChecked++;
@@ -118,7 +102,6 @@ if (isset($_POST["chkSweden"])) {
     $sweden = false;
 }
 $dataRecord[] = $sweden;
-
 if (isset($_POST["chkUnitedKingdom"])) {
     $uk = true;
     $totalChecked++;
@@ -129,12 +112,9 @@ $dataRecord[] = $uk;
         
 $email = filter_var($_POST["txtEmail"], FILTER_SANITIZE_EMAIL);
 $dataRecord[] = $email;
-
 $comment = htmlentities($_POST["txtComment"], ENT_QUOTES, ÜTF-8);
 $dataRecord[] = $comment;
-
 // SECTION: 2c Validation
-
 if ($firstName == "") {
     $errorMsg[] = "Please enter your first name";
     $firstNameERROR = true;
@@ -142,7 +122,6 @@ if ($firstName == "") {
     $errorMsg[] = "Your first name appears to have extra characters.";
     $firstNameERROR = true;
 }
-
 if ($lastName == "") {
     $errorMsg[] = "Please enter your last name";
     $lastNameERROR = true;
@@ -150,17 +129,19 @@ if ($lastName == "") {
     $errorMsg[] = "Your last name appears to have extra characters.";
     $lastNameERROR = true;
 }
-
 if ($gender != "Female" AND $gender !="Male" AND $gender !="NotAnswer"){
     $errorMsg[] = "Please choose a gender";
     $genderERROR = true;
 }
-
-if ($country == "1"){
-    $errorMsg[] = "Please choose one option";
-    $educationERROR = true;
+if ($country == "Argentina"){
+        $errorMsg[] = "Please choose your country";
+        $countryERROR = true;
+    }
+       
+if ($countries == "") {
+    $errorMsg[] = "Please type your country";
+    $countriesERROR = true;
 }
-
 if ($email == "") {
     $errorMsg[] = "Please enter your email address";
     $emailERROR = true;
@@ -168,14 +149,11 @@ if ($email == "") {
     $errorMsg[] = "Your email address appears to be incorrect.";
     $emailERROR = true;
 }
-
 if ($comment == "") {
     $errorMsg[] = "Please enter your comment";
     $commentERROR = true;
 }
-
 // SECTION: 2d Process Form
-
 if (!$errorMsg){
     if ($debug)
         print "<p>Form is valid</p>";
@@ -351,12 +329,59 @@ $mailed = sendMail ($to, $cc, $bcc, $from, $subject, $message);
             <select id="1stcountry"
                     name="1stcountry"
                     tabindex="118">
-                
-		    <option <?php if($education == "No Diploma") print "selected"; ?>
-                    value="No Diploma">No Diploma</option>
-                
-            </select>
-            </fieldset>
+                <option <?php if($country == "Argentina") print "selected"; ?>
+                    value="Argentina">Argentina</option>
+                <option <?php if($country == "Belgium") print "selected"; ?>
+                    value="Belgium">Belgium</option>
+                <option <?php if($country == "Brazil") print "selected"; ?>
+                    value="Brazil">Brazil</option>
+                <option <?php if($country == "Cambodia") print "selected"; ?>
+                    value="Cambodia">Cambodia</option>
+                <option <?php if($country == "China") print "selected"; ?>
+                    value="China">China</option>
+                <option <?php if($country == "Costa Rica") print "selected"; ?>
+                    value="Costa Rica">Costa Rica</option>
+                <option <?php if($country == "Cuba") print "selected"; ?>
+                    value="Cuba">Cuba</option>
+                <option <?php if($country == "France") print "selected"; ?>
+                    value="France">France</option>
+                <option <?php if($country == "Hong Kong") print "selected"; ?>
+                    value="Hong Kong">Hong Kong</option>
+                <option <?php if($country == "Iceland") print "selected"; ?>
+                    value="Iceland">Iceland</option>
+                <option <?php if($country == "India") print "selected"; ?>
+                    value="India">India</option>
+                <option <?php if($country == "Indonesia") print "selected"; ?>
+                    value="Indonesia">Indonesia</option>
+                <option <?php if($country == "Iran") print "selected"; ?>
+                    value="Iran">Iran</option>
+                <option <?php if($country == "Ireland") print "selected"; ?>
+                    value="Ireland">Ireland</option>
+                <option <?php if($country == "Japan") print "selected"; ?>
+                    value="Japan">Japan</option>
+                <option <?php if($country == "South Korea") print "selected"; ?>
+                    value="South Korea">South Korea</option>
+                <option <?php if($country == "Mexico") print "selected"; ?>
+                    value="Mexico">Mexico</option>
+                <option <?php if($country == "United Kingdom") print "selected"; ?>
+                    value="UK">United Kingdom</option>
+                <option <?php if($country == "United States") print "selected"; ?>
+                    value="US">The United States</option>
+            </select>			
+            <p>
+                <label class="required" for="txtCountries">If your country is not listed, please type it below:</label>
+                    <input
+			<?php if ($countriesERROR) print 'class="mistake"'; ?>				
+			id="txtCountries"
+			maxlength="45"
+                        name="txtCountries"
+			onfocus="this.select()"
+			placeholder="Enter a valid country name"
+			tabindex="200"
+			type="text"
+			value="<?php print $countries; ?>"
+                    >
+            </p>
         </fieldset>
         
         <fieldset class="checkbox <?php if ($visitedERRORERROR) print 'mistake'; ?>">

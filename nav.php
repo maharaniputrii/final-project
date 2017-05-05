@@ -7,9 +7,14 @@
             print ' activePage ';
         }
         print '">';
-        print '<a href="index.php">Home</a>';
+        print '<a href="index.php">About us</a>';
         print '</li>';
-
+        
+        
+    print '<div class="dropdown">';
+        print '<button class="dropbtn">Countries</button>';
+        print '<ul class="dropdown-content">';
+        
         print '<li class="';
         if ($path_parts['filename'] == "brazil") {
             print ' activePage ';
@@ -65,6 +70,10 @@
         print '">';
         print '<a href="uk.php">United Kingdom</a>';
         print '</li>';
+        
+        print '</ul>';
+    print '</div>';
+        
         
         print '<li class="';
         if ($path_parts['filename'] == "form") {

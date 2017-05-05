@@ -10,7 +10,7 @@
 body {
     background-color: #ffffff;
     background-image: url(redbg.gif);
-    margin: 1% 6%;
+    margin: 0% 10%;
 }
 
 h1 {
@@ -87,26 +87,25 @@ article p{
     width: 68%;
 }
 
+
 figure{
     margin: 1%;
 }
 
 .portrait img{
-    width: 130px;
+    width: 140px;
     float: left;
     margin: 2%;
 }
 
 
 aside {
-    float: right;
     border: solid thin black;
-    width: 30%;
-    clear: both;
     margin-bottom: 2%;
+    width: 30%;
 }
 
-aside h1 {
+aside h1, .students h1 {
     font-size: 16pt;
     margin: 0%;
     text-align: center;
@@ -117,19 +116,29 @@ aside p {
     padding: 0% 4%;
 }
 
+.no-border{
+    border: none;
+}
+
 .students {
-    width: 30%;
     min-width: 8.5em;
     background-color: #ffffff;
+    border: solid thin black;
+    margin-bottom: 2%;
 }
 
 .portrait{
     margin: 0%;
 }
 .quote {
-    font-size: 14pt;
     font-style: italic;
     text-align: justify;
+    border: solid thin black;
+    margin-bottom: 2%;
+}
+
+.quote p{
+        font-size: 14pt;
 }
 
 .firstimg img {
@@ -138,7 +147,7 @@ aside p {
 }
 
 .flag img {
-    width: 92%;
+    width: 135%;
     margin: 4%;
 }
 
@@ -149,6 +158,67 @@ aside p {
 .information p {
     width: 95%;
 }
+
+.flexslider ul li {
+    list-style-type: none;
+}
+
+.medium-img img {
+    width: 100%;
+}
+
+.small-img img {
+    width: 20%;
+    margin-left: -2%;
+}
+
+.right img{
+    float: right;
+    clear: left;
+    margin-left: 2%;
+}
+
+
+article figure {
+    width: 68%;
+    margin-left: 0px;
+}
+
+.float-right{
+    float: right;
+    clear: both;
+}
+
+.tourism-left figure{
+    margin-left: 0px;
+    float: left;
+    width: 50%;
+}
+
+.tourism-right figure{
+    margin-left: 0px;
+    float: right;
+    width: 50%;
+}
+
+
+section {
+    margin: 1% 0%;
+    width: 68%;
+    height: 17em;
+}
+
+figcaption{
+    font-style: italic;
+}
+
+.tourism-left p, .tourism-right p{
+    width: 100%;
+}
+
+.left img{
+    float: left;
+}
 /* ===================  Header Section  ==================================== */
 /* now i would have a section that corresponds to my html sections.          */
 header {
@@ -157,12 +227,89 @@ header {
 
 /* ===================  Navigation Section  ================================= */
 
+nav{
+    background-color: lightgreen;
+    width: 30%;
+    float: right;
+    margin-bottom: 2%;
+}
+
+nav ul {
+    padding-left: 0%;
+    text-align: right;
+    /*display: inline;*/
+}
+
 nav ul li{
     list-style-type: none;
     display: inline-block;
-    padding: 1%;
+    text-transform: uppercase;
+    padding: 2%;
 }
 
+nav ul li :link{
+    text-decoration: none;
+
+}
+
+nav ul li a:hover{
+    color: #5781E2;
+    text-decoration: none;
+}
+
+.activePage{
+    border: solid thin black;
+}
+
+
+
+
+
+/* Dropdown Button */
+.dropbtn {
+    padding: 16px;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    background-color: lightgreen;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+}
 /* ===================  Footer Section  ================================= */
 
 footer{
@@ -188,6 +335,92 @@ footer{
 .firstLine {
     text-indent: 3em;
 }
+
+/* ===================  Form                   ============================= */
+
+#frmRegister{
+    text-align: left;
+}
+
+.contact, .checkbox, .personal {
+    border: solid thin #f13170;
+    clear: both;
+}
+
+.buttons {
+    border: none;
+    margin-left: 40%;
+}
+
+.personal legend, .checkbox legend, .contact legend{
+    color: #f13170;
+    font-size: 18pt;
+}
+
+.radio legend, .listbox legend {
+    font-size: 12pt;
+}
+
+input {
+	padding: 10px;
+	margin: 5px;
+}
+
+input [type=text]{
+	border: 2px solid black;
+	border-radius: 0.7em;
+}
+
+
+#form input:focus,
+#form textarea:focus,  
+#form select:focus{
+    border: 1px solid #0C0;
+}
+
+#form input:hover{
+    background-color: lightgrey;
+}
+
+input[type=submit]{
+        width: 6em;
+        border-color:#f13170; 
+}
+
+input[type=submit]:hover{
+        background-color: darkgray;
+}
+
+.mistake {
+    color: red;
+    border: solid thick red;
+}
+
+#errors h2{
+    color: #f13170;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+#errors ol li{
+    color: red;
+}
+
+
+.form-message {
+    color: #f13170
+}
+
+.radio-field {
+    float: left;
+}
+
+.radio, .listbox {
+   border:none;
+}
+
+
+
+
 /* 
     Created on : Apr 2, 2017, 10:15:43 PM
     Author     : Cristine Enoki

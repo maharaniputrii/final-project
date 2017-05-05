@@ -169,7 +169,6 @@ aside p {
 
 .small-img img {
     width: 20%;
-    margin-left: -2%;
 }
 
 .right img{
@@ -219,6 +218,11 @@ figcaption{
 .left img{
     float: left;
 }
+
+.height{
+    height: 20em;
+}
+
 /* ===================  Header Section  ==================================== */
 /* now i would have a section that corresponds to my html sections.          */
 header {
@@ -425,4 +429,5 @@ input[type=submit]:hover{
     Created on : Apr 2, 2017, 10:15:43 PM
     Author     : Cristine Enoki
 */
+
 

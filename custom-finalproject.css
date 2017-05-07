@@ -3,33 +3,39 @@
 /* ===================  General Section  ==================================== */
 
 * {
+    font-family: 'PT Sans', sans-serif;
     font-size: 12pt;  /* sets the font size for all elements. */
     /* look up reset style sheet */
 }
 
+
 body {
-    background-color: #ffffff;
-    background-image: url(redbg.gif);
+    background-color: #f5f5f5;
+    background-image: url('../final-project/images/background.jpg');
     margin: 0% 10%;
+}
+
+article{
+    background-color: #f5f5f5;
 }
 
 h1 {
     color: #000000;
-    font-family: "sans-serif";
+    font-family: 'PT Serif', serif;
     font-weight: bold;
     font-size: 1.5em;
 }
 
 h2 {
     color: #000000;
-    font-family: "sans-serif";
+    font-family: 'PT Serif', serif;
     font-weight: bold;
     font-size: 1.25em;
 }
 
 h3 {
     color: black;
-    font-family: "times new roman";
+    font-family: 'PT Serif', serif;
     font-weight: bold;
     font-size: 1em;
 }
@@ -103,13 +109,14 @@ aside {
     border: solid thin black;
     margin-bottom: 2%;
     width: 30%;
+    background-color: #f5f5f5;
 }
 
 aside h1, .students h1 {
     font-size: 16pt;
     margin: 0%;
     text-align: center;
-    background-color: lightgreen;
+    background-color: #6fb750;
 }
 
 aside p {
@@ -122,7 +129,6 @@ aside p {
 
 .students {
     min-width: 8.5em;
-    background-color: #ffffff;
     border: solid thin black;
     margin-bottom: 2%;
 }
@@ -142,7 +148,7 @@ aside p {
 }
 
 .firstimg img {
-    width: 70%;
+    width: 100%;
     min-width: 315px;
 }
 
@@ -233,6 +239,16 @@ figcaption{
     margin: 2% 0% 2% 0%;
 }
 
+.long-img {
+    float: left;
+    width: 22.7%;
+    margin: 2% 0% 2% 0%;
+}
+
+.long-img img {
+    width: 100%;
+}
+
 article ul {
     margin-left: -2.5%;
 }
@@ -241,11 +257,20 @@ article ul li{
     width: 68%;
     padding: 1%;
 }
+
+.firstimg {
+    width: 68%;
+}
 /* ===================  Header Section  ==================================== */
 /* now i would have a section that corresponds to my html sections.          */
 header {
-    background-color: #dddddd;
+    background-color: #6fb750;
     margin-bottom: 2%;
+}
+
+.logo img {
+    width: 75px;
+    float: left;
 }
 
 /* ===================  Navigation Section  ================================= */
@@ -269,7 +294,8 @@ nav ul li{
 
 nav ul li :link{
     text-decoration: none;
-
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 10pt;
 }
 
 nav ul li a:hover{
@@ -278,7 +304,7 @@ nav ul li a:hover{
 }
 
 .activePage{
-    border: solid thin black;
+    text-decoration: underline;
 }
 
 
@@ -291,13 +317,18 @@ nav ul li a:hover{
     border: none;
     cursor: pointer;
     text-transform: uppercase;
-    background-color: lightgreen;
+    background-color: #6fb750;
 }
 
 /* The container <div> - needed to position the dropdown content */
 .dropdown {
     position: relative;
     display: inline-block;
+}
+
+.dropdown button {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 10pt;
 }
 
 /* Dropdown Content (Hidden by Default) */
@@ -363,8 +394,8 @@ footer{
     text-align: left;
 }
 
-.contact, .checkbox, .personal {
-    border: solid thin #f13170;
+.contact, .checkbox, .personal, .comment {
+    border: solid thin #6fb750;
     clear: both;
 }
 
@@ -373,13 +404,14 @@ footer{
     margin-left: 40%;
 }
 
-.personal legend, .checkbox legend, .contact legend{
-    color: #f13170;
-    font-size: 18pt;
+.personal legend, .checkbox legend, .contact legend, .comment legend{
+    color: #6fb750;
+    font-size: 14pt;
 }
 
 .radio legend, .listbox legend {
     font-size: 12pt;
+     color: black;
 }
 
 input {
@@ -419,7 +451,6 @@ input[type=submit]:hover{
 
 #errors h2{
     color: #f13170;
-    font-family: 'Source Sans Pro', sans-serif;
 }
 
 #errors ol li{
@@ -439,8 +470,9 @@ input[type=submit]:hover{
    border:none;
 }
 
-
-
+.comment input{
+    width: 100%;
+}
 
 /* 
     Created on : Apr 2, 2017, 10:15:43 PM

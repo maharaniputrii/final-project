@@ -63,7 +63,7 @@ include ("top.php");
         <section class="tourism-left height">
         <figure class="medium-img left">
             <img src="images/tower-bridge.jpg" alt="">
-        <figcaption></figcaption>
+        <figcaption>Tower Bridge, London</figcaption>
         </figure>
         <h3>London</h3>
         <p>London is the largest and most populous metropolis in the UK and the country's economic, transportation and cultural center.  It is also one of the oldest large cities in the world. It is one of the most visited cities in the globe both for business and tourism. London has several famous sightseeing spots such as the Big Bang, the clock in the Westminster Palace; the Buckingham Palace, The London home for the monarchs and the administrative head office and it is where the famous changing of the guards ceremony takes place; The London Eye a huge ferris wheel that lead to an amazing view of the city; The British Museum, museum from prehistoric to modern times; Tate Modern, museum of modern and contemporary art</p>
@@ -72,7 +72,7 @@ include ("top.php");
         <section class="tourism-right">
         <figure class="medium-img right">
             <img src="images/edinburgh.jpg" alt="">
-        <figcaption></figcaption>
+        <figcaption>Calton Hill, Edinburgh</figcaption>
         </figure>
         <h3>Edinburgh</h3>
         <p>Edinburgh is the capital of Scotland and its landscape is defined by rocky  hills. Some of the famous sights are Edinburgh Castle, Royal Yacht Britannia, Arthur's seat, Mary King's Close. And  the city also attract tourists for its festivals.</p>
@@ -81,7 +81,7 @@ include ("top.php");
         <section class="tourism-left">
         <figure class="medium-img left">
             <img src="images/manchester.jpg" alt="">
-        <figcaption></figcaption>
+        <figcaption>Manchester United Stadium, Manchester</figcaption>
         </figure>
         <h3>Manchester</h3>
         <p>Manchester located in England is in UK's second most populous area. The city is famous for its music scene being the starting place for bands like The Smiths and Oasis and also is famous for being the home of the soccer team Manchester United F.C..Some of the famous touristic place are: Museum of Science and Industry, National Football Museum, Albert Square, The John Rylands Library.</p>
@@ -90,39 +90,41 @@ include ("top.php");
 
         <h2>Interesting facts</h2>
         <ul>
-            <li><p>The United Kingdom has made several contributions to the world. Economical,  technological and industrious.  But also cultural, with literature, films and music.</p></li>
-            <li><p>In terms of writers the UK has several incredible  famous ones. William Shakespeare, considered by some the greatest dramatist of all times was British, and since him there were plenty of internationally successful writes, such as Jane Austin, Charles Dickens, George Orwell, Arthur Conan Doyle, and many more. The last being the creator of Sherlock Homes probably the most famous fictional detective of all times, having been transformed into movies and television series. More recently J.K. Rolling with the Harry Potter novels took the world by surprise and became an incredibly  accomplished writer and the Harry Potter series a massive hit.</p></li>
-            <li><p>In the music industry the UK provided the world with some of the most successful and revolutionary musicians. The Beatles, a band formed in Liverpool England, is one of the biggest bands of all time having influenced pop culture in way no other band has. But they are definitely not alone in the British music world, The Rolling Stones, Led Zepplin,  Pink Floyd, Queen, Elton John, David Bowie are some of others influential musicians. In the more recent music scene Adele, Ed Sheeran and Coldplay are some of the famous names.</p></li>
+            <li>The United Kingdom has made several contributions to the world. Economical,  technological and industrious.  But also cultural, with literature, films and music.</li>
+            <li>In terms of writers the UK has several incredible  famous ones. William Shakespeare, considered by some the greatest dramatist of all times was British, and since him there were plenty of internationally successful writes, such as Jane Austin, Charles Dickens, George Orwell, Arthur Conan Doyle, and many more. The last being the creator of Sherlock Homes probably the most famous fictional detective of all times, having been transformed into movies and television series. More recently J.K. Rolling with the Harry Potter novels took the world by surprise and became an incredibly  accomplished writer and the Harry Potter series a massive hit.</li>
+            <li>In the music industry the UK provided the world with some of the most successful and revolutionary musicians. The Beatles, a band formed in Liverpool England, is one of the biggest bands of all time having influenced pop culture in way no other band has. But they are definitely not alone in the British music world, The Rolling Stones, Led Zepplin,  Pink Floyd, Queen, Elton John, David Bowie are some of others influential musicians. In the more recent music scene Adele, Ed Sheeran and Coldplay are some of the famous names.</li>
         </ul>
         
         <h2>Food</h2>
         
         <figure class="small-img left">
             <img src="images/tea.jpg" alt="">
-        <figcaption></figcaption>
+        <figcaption>Tea</figcaption>
         </figure>
         <figure class="small-img left">
             <img src="images/fishnchips.jpg" alt="">
-        <figcaption></figcaption>
+        <figcaption>Fish and Chips</figcaption>
         </figure>
         <figure class="small-img left">
             <img src="images/scones.jpg" alt="">
-        <figcaption></figcaption>
+        <figcaption>Scones</figcaption>
         </figure>
         <figure class="small-img left">
             <img src="images/sheperd's-pie.jpg" alt="">
-        <figcaption></figcaption>
+        <figcaption>Sheperd's pie</figcaption>
         </figure>
         <figure class="small-img left">
             <img src="images/scotch-eggs.jpg" alt="">
-        <figcaption></figcaption>
+        <figcaption>Scotch eggs</figcaption>
         </figure>
-        <p>Tea, is one of Britain's most consumed products having a dense variety of types and it is usually served with milk. Drinking tea is something entrenched in the British culture from the tea break to the afternoon tea.</p>
-        <p>Fish and Chips, the classic British dish, fried fish with French fries and malt vinegar and tatar sauce</p>
-        <p>Scone, biscuit like cake lightly sweetened with fruit added to it sometimes</p>
-        <p>Shepherd's pie, a meat pie with mashed potatoes crust</p>
-        <p>Scotch eggs, boiled eggs wrapped in sausage meat and coated in breadcrumbs, baked or deep fried</p>
         
+        <ul>
+            <li>Tea, is one of Britain's most consumed products having a dense variety of types and it is usually served with milk. Drinking tea is something entrenched in the British culture from the tea break to the afternoon tea.</li>
+            <li>Fish and Chips, the classic British dish, fried fish with French fries and malt vinegar and tatar sauce</li>
+            <li>Scone, biscuit like cake lightly sweetened with fruit added to it sometimes</li>
+            <li>Shepherd's pie, a meat pie with mashed potatoes crust</li>
+            <li>Scotch eggs, boiled eggs wrapped in sausage meat and coated in breadcrumbs, baked or deep fried</li>
+        </ul>
         
         
         

@@ -56,7 +56,6 @@ include ("top.php");
             <p>Total area: 8,515,767 km2</p>
             <p>Population: (2016 est.) 207,345,000</p>
         </aside>
-            <a href="form.php"></a>
             
         <p>Brazil is the biggest country in South America and the fifth largest and the fifth most populous country in the world. It contains a large set of tropical and subtropical landscapes.</p>
         <p>Cultural and ethnical diversity is big in Brazil. Throughout its history Brazil had different waves of immigrants, Portuguese (the colonizers) initially and then Italian, German and from others European countries as well as Japanese during the 19th and 20th century. The natives Indians after colonization had its number decreased and now account for a very small percentage of the total population and African descendents are numerous because of the African slavery during colonization. Nowadays Brazil is a mix of all these different ethnicities and cultures, intercultural marriage is common which leads to a very diverse community. In addition Brazil has absorbed and integrated parts of the cultures of all these different people into the Brazilian culture.</p>
@@ -67,7 +66,7 @@ include ("top.php");
         <section class="tourism-left">
         <figure class="medium-img">
             <img src="images/copacabana.jpg" alt="">
-        <figcaption>Copacabana, Rio de Janeiro</figcaption>
+        <figcaption>Copacabana beach, Rio de Janeiro</figcaption>
         </figure>
         <h3>Rio de Janeiro</h3>
         <p>Rio de Janeiro is the most internationally famous city of Brazil because of its touristic attractions as well as the Carnival. It has beautiful beaches, including the beach of Copacabana. It also has one of the “New Seven Wonders in the World”, the statue of “Cristo Redentor” (Christ the Redeemer). The weather is always pleasant and the people are know for being welcoming and friendly.</p>
@@ -104,14 +103,13 @@ include ("top.php");
         <h2>Interesting facts</h2>
         <p>Some of the main things Brazil is famous for are: soccer, Carnival, the city of Rio and friendly people.</p>
         <ul>
-            <li><p>Soccer is without a doubt the most famous and popular sport in the country. And Brazil is good at it. It has won the FIFA World Cup five times being the country with more titles, and it is also the only country to have participated in all of the editions.</p></li>
-            <li><p>Brazil’s Carnival is a week of celebrations and parties  (depending on the State even longer). Historically it is a continuation of a Portuguese celebration that took place the day before Lent begins. Nowadays the Rio’s Carnival is the most famous celebration, it involves hundreds of block parades from the Samba schools, who do the parade in their allegoric cars with hundreds of people “sambando” (dancing samba).</p></li>
-            <li><p>Brazilians are know for being very friendly, and it is true that normally Brazilians are very open and welcoming. One thing outsiders might find strange is that touching other people is very common in the culture.When you first meet someone you already greet them with a hung and kiss on the cheek (depending on the region one in each cheek). That personal space that is very valued on various cultures is almost non-existing in Brazil. And people also tend to be be very expressive, gesturing a lot and talking loudly.</p></li>
+            <li>Soccer is without a doubt the most famous and popular sport in the country. And Brazil is good at it. It has won the FIFA World Cup five times being the country with more titles, and it is also the only country to have participated in all of the editions.</li>
+            <li>Brazil’s Carnival is a week of celebrations and parties  (depending on the State even longer). Historically it is a continuation of a Portuguese celebration that took place the day before Lent begins. Nowadays the Rio’s Carnival is the most famous celebration, it involves hundreds of block parades from the Samba schools, who do the parade in their allegoric cars with hundreds of people “sambando” (dancing samba).</li>
+            <li>Brazilians are know for being very friendly, and it is true that normally Brazilians are very open and welcoming. One thing outsiders might find strange is that touching other people is very common in the culture.When you first meet someone you already greet them with a hung and kiss on the cheek (depending on the region one in each cheek). That personal space that is very valued on various cultures is almost non-existing in Brazil. And people also tend to be be very expressive, gesturing a lot and talking loudly.</li>
         </ul>
         
         <h2>Food</h2>
         <p>Brazilian food is amazing! Some of the most famous dishes are:</p>
-        <div class="food-img">
         <figure class="small-img left">
             <img src="images/feijoada.jpg" alt="">
         <figcaption>"Feijoada"</figcaption>
@@ -132,14 +130,13 @@ include ("top.php");
             <img src="images/caipirinha.jpg" alt="">
         <figcaption>"Caipirinha"</figcaption>
         </figure>
-        </div>
         
         <ul>
-            <li><p>“Feijoada”, a black bean and pork meat stew, Brazil’s most traditional dish</p></li>
-            <li><p>“Churrasco”, the Brazilian barbecue not like any other barbecue you have ever eaten, big pieces of meat are roasted with charcoal and seasoned with rock salt</p></li>
-            <li><p>“Pao de queijo” (cheese bread), a delicious snack eaten in breakfast or in the afternoon made with cassava starch and cheese</p></li>
-            <li><p>“Brigadeiro”, most famous dessert made with condensed milk and chocolate.</p></li>
-            <li><p>"Caipirinha", Brazil's traditional drink, the original one is made with lime and "cachaça" (sugar cane liquor) having variations made with other fruits and liquor</p></li>
+            <li>“Feijoada”, a black bean and pork meat stew, Brazil’s most traditional dish</p></li>
+            <li>“Churrasco”, the Brazilian barbecue not like any other barbecue you have ever eaten, big pieces of meat are roasted with charcoal and seasoned with rock salt</li>
+            <li>“Pao de queijo” (cheese bread), a delicious snack eaten in breakfast or in the afternoon made with cassava starch and cheese</li>
+            <li>“Brigadeiro”, most famous dessert made with condensed milk and chocolate.</p></li>
+            <li>"Caipirinha", Brazil's traditional drink, the original one is made with lime and "cachaça" (sugar cane liquor) having variations made with other fruits and liquor</li>
         </ul>
 
     <?php

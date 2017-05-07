@@ -16,7 +16,6 @@ $firstName = "";
 $lastName = "";
 $gender="Female";
 $country="Argentina";
-$countries="";
 $brazil = false;
 $france = false;
 $indonesia = false;
@@ -31,7 +30,6 @@ $firstNameERROR = false;
 $lastNameERROR = false;
 $genderERROR = false;
 $countryERROR = false;
-$countriesERROR = false;
 $visitedERROR = false;
 $totalChecked = 0;
 $emailERROR = false;
@@ -58,8 +56,6 @@ $dataRecord[] = $gender;
 $country = htmlentities($_POST["1stCountry"], ENT_QUOTES, ÜTF-8);
 $dataRecord[] = $country;
 	
-$countries = htmlentities($_POST["txtCountries"], ENT_QUOTES, ÜTF-8);
-$dataRecord[] = $countries;
 if (isset($_POST["chkBrazil"])) {
     $brazil = true;
     $totalChecked++;
@@ -138,10 +134,6 @@ if ($country == "Argentina"){
         $countryERROR = true;
     }
        
-if ($countries == "") {
-    $errorMsg[] = "Please type your country";
-    $countriesERROR = true;
-}
 if ($email == "") {
     $errorMsg[] = "Please enter your email address";
     $emailERROR = true;
@@ -329,22 +321,62 @@ $mailed = sendMail ($to, $cc, $bcc, $from, $subject, $message);
             <select id="1stcountry"
                     name="1stcountry"
                     tabindex="118">
+                <option <?php if($country == "Afghanistan") print "selected"; ?>
+                    value="Afghanistan">Afghanistan</option>
+                <option <?php if($country == "Albania") print "selected"; ?>
+                    value="Albania">Albania</option>
+                <option <?php if($country == "Algeria") print "selected"; ?>
+                    value="Algeria">Algeria</option>
                 <option <?php if($country == "Argentina") print "selected"; ?>
                     value="Argentina">Argentina</option>
+                <option <?php if($country == "Australia") print "selected"; ?>
+                    value="Australia">Australia</option>
+                <option <?php if($country == "Austria") print "selected"; ?>
+                    value="Austria">Austria</option>
+                <option <?php if($country == "Bahamas") print "selected"; ?>
+                    value="Bahamas">Bahamas, The</option>
                 <option <?php if($country == "Belgium") print "selected"; ?>
                     value="Belgium">Belgium</option>
                 <option <?php if($country == "Brazil") print "selected"; ?>
                     value="Brazil">Brazil</option>
                 <option <?php if($country == "Cambodia") print "selected"; ?>
                     value="Cambodia">Cambodia</option>
+                <option <?php if($country == "Canada") print "selected"; ?>
+                    value="Canada">Canada</option>
+                <option <?php if($country == "Africa") print "selected"; ?>
+                    value="Africa">Central African Republic</option>
                 <option <?php if($country == "China") print "selected"; ?>
                     value="China">China</option>
                 <option <?php if($country == "Costa Rica") print "selected"; ?>
                     value="Costa Rica">Costa Rica</option>
                 <option <?php if($country == "Cuba") print "selected"; ?>
                     value="Cuba">Cuba</option>
+                <option <?php if($country == "Denmark") print "selected"; ?>
+                    value="Denmark">Denmark</option>
+                <option <?php if($country == "Dominica") print "selected"; ?>
+                    value="Dominica">Dominica</option>
+                <option <?php if($country == "Cuba") print "selected"; ?>
+                    value="Cuba">Cuba</option>
+                <option <?php if($country == "Dominican Republic") print "selected"; ?>
+                    value="Dominican Republic">Dominican Republic</option>
+                <option <?php if($country == "Egypt") print "selected"; ?>
+                    value="Egypt">Egypt</option>
+                <option <?php if($country == "Estonia") print "selected"; ?>
+                    value="Estonia">Estonia</option>
+                <option <?php if($country == "Ethiopia") print "selected"; ?>
+                    value="Ethiopia">Ethiopia</option>
+                <option <?php if($country == "Fiji") print "selected"; ?>
+                    value="Fiji">Fiji</option>
                 <option <?php if($country == "France") print "selected"; ?>
                     value="France">France</option>
+                <option <?php if($country == "Germany") print "selected"; ?>
+                    value="Germany">Germany</option>
+                <option <?php if($country == "Greece") print "selected"; ?>
+                    value="Greece">Greece</option>
+                <option <?php if($country == "Guinea") print "selected"; ?>
+                    value="Guinea">Guinea</option>
+                <option <?php if($country == "Haiti") print "selected"; ?>
+                    value="Haiti">Haiti</option>
                 <option <?php if($country == "Hong Kong") print "selected"; ?>
                     value="Hong Kong">Hong Kong</option>
                 <option <?php if($country == "Iceland") print "selected"; ?>
@@ -355,33 +387,116 @@ $mailed = sendMail ($to, $cc, $bcc, $from, $subject, $message);
                     value="Indonesia">Indonesia</option>
                 <option <?php if($country == "Iran") print "selected"; ?>
                     value="Iran">Iran</option>
+                <option <?php if($country == "Iraq") print "selected"; ?>
+                    value="Iraq">Iraq</option>
                 <option <?php if($country == "Ireland") print "selected"; ?>
                     value="Ireland">Ireland</option>
+                <option <?php if($country == "Israel") print "selected"; ?>
+                    value="Israel">Israel</option>
+                <option <?php if($country == "Italy") print "selected"; ?>
+                    value="Italy">Italy</option>
+                <option <?php if($country == "Jamaica") print "selected"; ?>
+                    value="Jamaica">Jamaica</option>
                 <option <?php if($country == "Japan") print "selected"; ?>
                     value="Japan">Japan</option>
+                <option <?php if($country == "Kazakhstan") print "selected"; ?>
+                    value="Kazakhstan">Kazakhstan</option>
+                <option <?php if($country == "Kenya") print "selected"; ?>
+                    value="Kenya">Kenya</option>
+                <option <?php if($country == "North Korea") print "selected"; ?>
+                    value="North Korea">Korea, North</option>
                 <option <?php if($country == "South Korea") print "selected"; ?>
-                    value="South Korea">South Korea</option>
+                    value="South Korea">Korea, South</option>
+                <option <?php if($country == "Kuwait") print "selected"; ?>
+                    value="Kuwait">Kuwait</option>
+                <option <?php if($country == "Laos") print "selected"; ?>
+                    value="Laos">Laos</option>
+                <option <?php if($country == "Lebanon") print "selected"; ?>
+                    value="Lebanon">Lebanon</option>
+                <option <?php if($country == "Liberia") print "selected"; ?>
+                    value="Liberia">Liberia</option>
+                <option <?php if($country == "Macau") print "selected"; ?>
+                    value="Macau">Macau</option>
+                <option <?php if($country == "Madagascar") print "selected"; ?>
+                    value="Madagascar">Madagascar</option>
+                <option <?php if($country == "Malaysia") print "selected"; ?>
+                    value="Malaysia">Malaysia</option>
+                <option <?php if($country == "Maldives") print "selected"; ?>
+                    value="Maldives">Maldives</option>
                 <option <?php if($country == "Mexico") print "selected"; ?>
                     value="Mexico">Mexico</option>
+                <option <?php if($country == "Mongolia") print "selected"; ?>
+                    value="Mongolia">Mongolia</option>
+                <option <?php if($country == "Morocco") print "selected"; ?>
+                    value="Morocco">Morocco</option>
+                <option <?php if($country == "Nepal") print "selected"; ?>
+                    value="Nepal">Nepal</option>
+                <option <?php if($country == "Netherlands") print "selected"; ?>
+                    value="Netherlands">Netherlands</option>
+                <option <?php if($country == "New Zealand") print "selected"; ?>
+                    value="New Zealand">New Zealand</option>
+                <option <?php if($country == "Nigeria") print "selected"; ?>
+                    value="Nigeria">Nigeria</option>
+                <option <?php if($country == "Norway") print "selected"; ?>
+                    value="Norway">Norway</option>
+                <option <?php if($country == "Pakistan") print "selected"; ?>
+                    value="Pakistan">Pakistan</option>
+                <option <?php if($country == "Papua New Guinea") print "selected"; ?>
+                    value="Papua New Guinea">Papua New Guinea</option>
+                <option <?php if($country == "Paraguay") print "selected"; ?>
+                    value="Paraguay">Paraguay</option>
+                <option <?php if($country == "Peru") print "selected"; ?>
+                    value="Peru">Peru</option>
+                <option <?php if($country == "Philippines") print "selected"; ?>
+                    value="Philippines">Philippines</option>
+                <option <?php if($country == "Poland") print "selected"; ?>
+                    value="Poland">Poland</option>
+                <option <?php if($country == "Portugal") print "selected"; ?>
+                    value="Portugal">Portugal</option>
+                <option <?php if($country == "Qatar") print "selected"; ?>
+                    value="Qatar">Qatar</option>
+                <option <?php if($country == "Romania") print "selected"; ?>
+                    value="Romania">Romania</option>
+                <option <?php if($country == "Russia") print "selected"; ?>
+                    value="Russia">Russia</option>
+                <option <?php if($country == "Saudi Arabia") print "selected"; ?>
+                    value="Saudi Arabia">Saudi Arabia</option>
+                <option <?php if($country == "Slovenia") print "selected"; ?>
+                    value="Slovenia">Slovenia</option>
+                <option <?php if($country == "Singapore") print "selected"; ?>
+                    value="Singapore">Singapore</option>
+                <option <?php if($country == "Spain") print "selected"; ?>
+                    value="Spain">Spain</option>
+                <option <?php if($country == "Sweden") print "selected"; ?>
+                    value="Sweden">Sweden</option>
+                <option <?php if($country == "Switzerland") print "selected"; ?>
+                    value="Switzerland">Switzerland</option>
+                <option <?php if($country == "Taiwan") print "selected"; ?>
+                    value="Taiwan">Taiwan</option>
+                <option <?php if($country == "Thaliand") print "selected"; ?>
+                    value="Thailand">Thailand</option>
+                <option <?php if($country == "Turkey") print "selected"; ?>
+                    value="Turkey">Turkey</option>
+                <option <?php if($country == "Uganda") print "selected"; ?>
+                    value="Uganda">Uganda</option>
+                <option <?php if($country == "Ukraine") print "selected"; ?>
+                    value="Ukraine">Ukraine</option>
+                <option <?php if($country == "United Arab Emirates") print "selected"; ?>
+                    value="United Arab Emirates">United Arab Emirates</option>
                 <option <?php if($country == "United Kingdom") print "selected"; ?>
                     value="UK">United Kingdom</option>
                 <option <?php if($country == "United States") print "selected"; ?>
                     value="US">The United States</option>
-            </select>			
-            <p>
-                <label class="required" for="txtCountries">If your country is not listed, please type it below:</label>
-                    <input
-			<?php if ($countriesERROR) print 'class="mistake"'; ?>				
-			id="txtCountries"
-			maxlength="45"
-                        name="txtCountries"
-			onfocus="this.select()"
-			placeholder="Enter a valid country name"
-			tabindex="200"
-			type="text"
-			value="<?php print $countries; ?>"
-                    >
-            </p>
+                <option <?php if($country == "Uruguay") print "selected"; ?>
+                    value="Uruguay">Uruguay</option>
+                <option <?php if($country == "Venezuela") print "selected"; ?>
+                    value="Venezuela">Venezuela</option>
+                <option <?php if($country == "Vietnam") print "selected"; ?>
+                    value="Vietnam">Vietnam</option>
+                <option <?php if($country == "Yemen") print "selected"; ?>
+                    value="Yemen">Yemen</option>
+                
+            </select>		
         </fieldset>
         
         <fieldset class="checkbox <?php if ($visitedERRORERROR) print 'mistake'; ?>">

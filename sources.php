@@ -53,25 +53,33 @@ include ("top.php");
         <p>http://citispotter.com/why-fish-and-chips-is-so-popular-in-england/</p>
         <p>https://www.buzzfeed.com/jenniferschaffer/yum-british-food?utm_term=.eon627OzaY#.lgEO9vEqwL</p>
         <p>http://www.seriouseats.com/2016/10/how-to-make-shepherds-pie-beef-lamb.html</p>
-        <p></p>
-        <p></p>
-        <p></p>
-        <p></p>
-        <p></p>
-        <p></p>
-        <p></p>
-        <p></p>
-        <p></p>
-        <p></p>
-        <p></p>
-        <p></p>
-        <p></p>
-        <p></p>
-        <p></p>
-        <p></p>
-        <p></p>
-        <p></p>
-        <p></p>
+        
+        <h2>Indonesia</h2>
+        <p>http://allindonesiatravel.com/must-visit-places-indonesia/</p>
+        <p>http://www.touropia.com/best-places-to-visit-in-indonesia/</p>
+        <p>http://www.cnn.com/2016/02/24/foodanddrink/40-indonesian-foods/</p>
+        
+        <h2>Sweden</h2>
+        <p>http://www.neverstoptraveling.com/the-top-10-places-in-sweden</p>
+        <p>http://www.planetware.com/tourist-attractions/sweden-s.htm</p>
+        <p>http://www.eupedia.com/sweden/trivia.shtml</p>
+        <p>https://en.wikipedia.org/wiki/Swedish_cuisine</p>
+        <p>https://sweden.se/collection/classic-swedish-food/</p>
+        
+        <h2>South Korea</h2>
+        <p>http://travel.cnn.com/seoul/visit/50-beautiful-places-visit-korea-873093/</p>
+        <p>https://www.onthegotours.com/South-Korea/Best-Places-To-Visit</p>
+        <p>https://theculturetrip.com/asia/south-korea/articles/21-stunningly-beautiful-places-to-visit-in-south-korea/</p>
+        <p>https://www.factretriever.com/south-korea-facts</p>
+        <p>https://migrationology.com/south-korean-food-dishes/</p>
+        <p>http://travel.cnn.com/seoul/eat/40-foods-koreans-cant-live-without-054198/</p>
+        
+        <h2>France</h2>
+        <p>https://www.lonelyplanet.com/france/travel-tips-and-articles/76696</p>
+        <p>http://www.businessinsider.com/35-places-you-need-to-visit-in-france-2014-9</p>
+        <p>http://www.touropia.com/best-places-to-visit-in-france/</p>
+        <p>http://www.expatica.com/fr/about/30-interesting-facts-about-France_109142.html</p>
+        <p>http://www.expatica.com/fr/insider-views/Top-10-French-foods-with-recipes_106720.html</p>
         <p></p>
         <p></p>
         <p></p>

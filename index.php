@@ -6,7 +6,7 @@ include ("top.php");
 <aside class="float-right">
     <p class="font-big">The University of Vermont accepts hundreds of students from all over the world every year!</p>
     <p>This is a website made by two them.</p>
-    <p>Here you will find information about the home country of some of those international students.</p>
+    <p>Here you will find information about the home country of some of these international students.</p>
 </aside>
 <aside class="float-right">
     <h1>Make Contributions!</h1>
@@ -28,9 +28,11 @@ include ("top.php");
         
     <aside class="information float-right">
         <h1>About this Website</h1>
-        <p>International students are a great way to learn about different countries and cultures of all over the world. Because its their culture, their country.</p>
+        <p>International students are a great way to learn about countries and cultures from all over the world. Learn from a person who grew up in that specific place and culture</p>
+        <p>Living abroad, in a different culture, a lot of times in a different language can be very challenging, but it is an amazing experience. Telling people things about your country, your home town that they did not know and sometimes change stereotypes they had before about your country is a really cool experience. And also learning about different countries from other international students is priceless, its so much better learning from someone who is actually from the place, from the culture.</p>
         <p>This website gives these students a chance to share things about their countries and about themselves.</p>
-        <p>Living abroad, in a different culture, a lot of times in a different language can be very challenging, but it is an amazing experience. And it is nice telling people things about your country, your home that they did not know and sometimes change the stereotypes they had before about your country. And also learning about different countries from other international students is priceless, its so much better learning from someone who is actually from the place, from the culture.</p>
+        <p>Being international students and meeting a lot of other international students gave us the idea to make a website for us.</p>
+        <p>(Cristine Enoki and Maharani Putri)</p>
     </aside>
     
         

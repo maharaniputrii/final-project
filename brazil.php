@@ -15,7 +15,7 @@ include ("top.php");
             <p>Cristine Sudo Enoki</p>
             <p>18 years old</p>
             <p>Freshman</p>
-            <p>Ribeirao Preto, SP, Brazil</p>
+            <p>Ribeirao Preto, Brazil</p>
         </div>
         <div class="quote">
             <p>“One of the things I miss most about Brazil is the food. Only when I left I realized all the dishes that they don’t have here in the US. Such a shame, Americans don’t know what they’re missing out!”</p>
@@ -29,13 +29,13 @@ include ("top.php");
         <div class="flexslider">
             <ul class="slides">
                 <li>
-                    <img src="images/rio.jpg" alt="Rio de Janeiro, Brazil">
+                    <img src="images/rio.jpg" alt="Rio de Janeiro">
                 </li>
                 <li>
-                    <img src="images/praia-ceara.jpg" alt="" >
+                    <img src="images/praia-ceara.jpg" alt="Ceara beach" >
                 </li>
                 <li>
-                    <img src="images/carnival.jpg" alt="" >
+                    <img src="images/carnival.jpg" alt="Carnival" >
                 </li>
             </ul>
         </div>
@@ -134,10 +134,10 @@ include ("top.php");
         
         <p>Brazilian food is amazing! Some of the most famous dishes are:</p>
         <ul>
-            <li>“Feijoada”, a black bean and pork meat stew, Brazil’s most traditional dish</p></li>
+            <li>“Feijoada”, a black bean and pork meat stew, Brazil’s most traditional dish</li>
             <li>“Churrasco”, the Brazilian barbecue not like any other barbecue you have ever eaten, big pieces of meat are roasted with charcoal and seasoned with rock salt</li>
             <li>“Pao de queijo” (cheese bread), a delicious snack eaten in breakfast or in the afternoon made with cassava starch and cheese</li>
-            <li>“Brigadeiro”, most famous dessert made with condensed milk and chocolate.</p></li>
+            <li>“Brigadeiro”, most famous dessert made with condensed milk and chocolate.</li>
             <li>"Caipirinha", Brazil's traditional drink, the original one is made with lime and "cachaça" (sugar cane liquor) having variations made with other fruits and liquor</li>
         </ul>
 

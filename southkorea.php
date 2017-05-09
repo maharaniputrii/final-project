@@ -13,6 +13,8 @@ include ("top.php");
             <p>21 years old</p>
             <p>Exchange Student</p>
             <p>Seoul, South Korea</p>
+            <br>
+            
         </div>
         <div class="quote">
             <p>"There are so many different cultures in this world, but I don't need to follow new trends and also don't need to keep my mind unalterable. If it's comfortable just take it and enjoy it."</p>
@@ -25,13 +27,13 @@ include ("top.php");
         <div class="flexslider">
             <ul class="slides">
                 <li>
-                    <img src="images/seoul-slider.jpg" alt="Rio de Janeiro, Brazil">
+                    <img src="images/seoul-slider.jpg" alt="Seoul">
                 </li>
                 <li>
-                    <img src="images/skorea3.jpg" alt="" >
+                    <img src="images/skorea3.jpg" alt="Temple" >
                 </li>
                 <li>
-                    <img src="images/skorea1.jpg" alt="" >
+                    <img src="images/skorea1.jpg" alt="Seoul" >
                 </li>
             </ul>
         </div>
@@ -62,7 +64,7 @@ include ("top.php");
         <section class="tourism-left height">
         <figure class="medium-img">
             <img src="images/seoul.jpg" alt="">
-        <figcaption>Seoul, Korea</figcaption>
+        <figcaption>Seoul</figcaption>
         </figure>
         <h3>Seoul</h3>
         <p> Seoul is the capital city of South Korea. It is a modern city that lives up to the '24-hour party' tag. There are a lot of exciting places to go for eat, drink, shop, and relax.</p>

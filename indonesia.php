@@ -12,6 +12,7 @@ include ("top.php");
             <p>18 years old</p>
             <p>Freshman</p>
             <p>Jakarta, Indonesia</p>
+            <br>
         </div>
 
         <div class="quote">
@@ -23,13 +24,13 @@ include ("top.php");
         <div class="flexslider">
             <ul class="slides">
                 <li>
-                    <img src="images/indonesia3.jpg" alt="Rio de Janeiro, Brazil">
+                    <img src="images/indonesia1.jpg" alt="Jakarta">
                 </li>
                 <li>
-                    <img src="images/jakarta-slider.jpg" alt="" >
+                    <img src="images/indonesia3.jpg" alt="Countryside" >
                 </li>
                 <li>
-                    <img src="images/indonesia2.jpg" alt="" >
+                    <img src="images/indonesia2.jpg" alt="Temple" >
                 </li>
             </ul>
         </div>

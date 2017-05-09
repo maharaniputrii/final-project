@@ -5,9 +5,10 @@ include ("top.php");
 // SECTION: 1a.
 // We print out the post array so that we can see our form is working.
 // if ($debug){  // later you can uncomment the if statement
-print '<p>Post Array: </p><pre>';
-print_r($_POST);
-print '</pre>';
+
+////print '<p>Post Array: </p><pre>';
+//print_r($_POST);
+////print '</pre>';
 //}
 //SECTION: 1b Security
 $thisURL = $domain . $phpSelf;
@@ -110,6 +111,7 @@ $email = filter_var($_POST["txtEmail"], FILTER_SANITIZE_EMAIL);
 $dataRecord[] = $email;
 $comment = htmlentities($_POST["txtComment"], ENT_QUOTES, ÜTF-8);
 $dataRecord[] = $comment;
+
 // SECTION: 2c Validation
 if ($firstName == "") {
     $errorMsg[] = "Please enter your first name";
@@ -133,7 +135,8 @@ if ($country == "Argentina"){
         $errorMsg[] = "Please choose your country";
         $countryERROR = true;
     }
-       
+  
+    
 if ($email == "") {
     $errorMsg[] = "Please enter your email address";
     $emailERROR = true;
@@ -175,7 +178,7 @@ foreach ($_POST as $htmlName => $value) {
 $to = $email;
 $cc = "";
 $bcc = "";
-$from = "Diversity in UVM <customer.service@diversityinuvm.com>";
+$from = "International Students<customer.service@internationalstu.com>";
 $todaysDate = strftime("%x");
 $subject = "Subscription: ". $todaysDate;
 $mailed = sendMail ($to, $cc, $bcc, $from, $subject, $message);
@@ -194,7 +197,7 @@ $mailed = sendMail ($to, $cc, $bcc, $from, $subject, $message);
  
  
  if (isset($_POST["btnSubmit"])AND empty($errorMsg)) {
-     print "<h2>Thank you for subscribing!</h2>";
+     print "<h2>Thank you for filling out the from! And your interest in contributing to this website!</h2>";
      
       print "<p>For your records a copy of this data has ";
       
@@ -247,7 +250,7 @@ $mailed = sendMail ($to, $cc, $bcc, $from, $subject, $message);
 ?>
 	
     <form action="<?php print $phpSelf; ?>"
-	id="frmRegister"
+	id="frmSubmit"
 	method="post">
 	
         <fieldset class="personal">
@@ -568,7 +571,7 @@ $mailed = sendMail ($to, $cc, $bcc, $from, $subject, $message);
         <fieldset class="contact">
             <legend>Contact Information</legend>			
             <p>
-                <label class="required" for="txtEmail">Email</label>
+                <label class="required" for="txtEmail">Email:</label>
                     <input
 			<?php if ($emailERROR) print 'class="mistake"'; ?>				
 			id="txtEmail"
@@ -585,8 +588,8 @@ $mailed = sendMail ($to, $cc, $bcc, $from, $subject, $message);
 	        <fieldset class="comment">
             <legend>If you have any question or comment about the website please enter it bellow.</legend>
             <p>
-                <label class="required text-field" for="txtFirstName">Comment</label>
-                <input autofocus
+                <label class="text-field" for="txtFirstName">Comment:</label>
+                 <input
                        <?php if ($commentERROR) print 'class="mistake"'; ?>
                        id="txtComment"
                        maxlength="45"
@@ -602,7 +605,7 @@ $mailed = sendMail ($to, $cc, $bcc, $from, $subject, $message);
 			
 	<fieldset class="buttons">
             <legend></legend>
-            <input class="button" id="btnSubmit" name="btnSubmit" tabindex="900" type="submit" value="Register">
+            <input class="button" id="btnSubmit" name="btnSubmit" tabindex="900" type="submit" value="Submit">
 	</fieldset>
     </form>
 	

@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Diversity in University of Vermont</title>
+        <title>International Students</title>
 
         <meta charset="utf-8">
-        <meta name="author" content="group">
-        <meta name="description" content="read this: http://moz.com/learn/seo/meta-description ">
+        <meta name="author" content="Cristine Enoki and Maharani Rustam">
+        <meta name="description" content="Website made by two international students that study at The University of Vermont. Information about homecountries of some international students (Brazil, France, Indonesia, South Korea, Spain, Sweden and United Kingdom).">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        
+
         
         <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
         <script src="js/jquery.flexslider.js"></script>
@@ -26,12 +27,16 @@
 
             });
         </script>
-      
+        
+        <link rel="icon" href="../final-project/images/logo.png" type="image/png" sizes="17x17">
+
         <link rel="stylesheet" href="../css/custom-finalproject.css" type="text/css" media="screen">
         
-<link href="https://fonts.googleapis.com/css?family=Josefin+Sans|PT+Sans|PT+Serif" rel="stylesheet">
-        
- <?php
+        <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=PT+Serif" rel="stylesheet">
+ 
+            <?php
         $debug = false;
         if (isset($_GET["debug"])) {
             $debug = true;

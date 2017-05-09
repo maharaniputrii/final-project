@@ -14,6 +14,7 @@ include ("top.php");
             <p>22 years old</p>
             <p>Exchange student</p>
             <p>Birmingham, United Kingdom</p>
+     
         </div>
         <div class="quote">
             <p>“Strange as it might sound I miss the public transport from the UK (which I never thought I’d say as it drives me crazy when I’m home) coming to the USA I’ve realised how amazing it actually is and how necessary it is for this country. It would be so much easier to travel!”</p>
@@ -26,13 +27,13 @@ include ("top.php");
         <div class="flexslider">
             <ul class="slides">
                 <li>
-                    <img src="images/london-day.jpg" alt="Rio de Janeiro, Brazil">
+                    <img src="images/london-day.jpg" alt="London">
                 </li>
                 <li>
-                    <img src="images/stonehenge-england.JPG" alt="" >
+                    <img src="images/stonehenge-england.JPG" alt="Stonehenge" >
                 </li>
                 <li>
-                    <img src="images/buckingham-palace.jpg" alt="" >
+                    <img src="images/buckingham-palace.jpg" alt="Buckingham" >
                 </li>
             </ul>
         </div>

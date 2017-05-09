@@ -13,6 +13,7 @@ include ("top.php");
             <p>22 years old</p>
             <p>Exchange Student</p>
             <p>Courteuil, France</p>
+            <br>
     </div>
     <div class="quote">
             <p> ”Deciding to come study here was one of the best decision I made, I met a lot of awesome people and I was able to study subjects I would never have been able to study in France.”</p>
@@ -29,10 +30,10 @@ include ("top.php");
                     <img src="images/paris-slider.jpg" alt="Paris">
                 </li>
                 <li>
-                    <img src="images/france2.jpg" alt="" >
+                    <img src="images/france2.jpg" alt="South of France" >
                 </li>
                 <li>
-                    <img src="images/france3.jpg" alt="" >
+                    <img src="images/france3.jpg" alt="Paris" >
                 </li>
             </ul>
         </div>
@@ -69,7 +70,7 @@ include ("top.php");
     <section class="tourism-left">
         <figure class="medium-img">
             <img src="images/paris.jpg" alt="">
-        <figcaption>Paris, France</figcaption>
+        <figcaption>Paris</figcaption>
         </figure>
         <h3>Paris</h3>
         <p>Paris is the most popular tourist destination in France. The places that you should go in Paris are Eiffel Tower (Tour Eiffel); Musee du Louvre, is the biggest art museum in the world, and it was the most visited museum in the 2014, you can find the great "Mona Lisa" here!;and last but not least, Notre-Dame Cathedral (Cathedrale de Notre Dame de Paris). </p>
@@ -86,7 +87,7 @@ include ("top.php");
     <section class="tourism-left">
         <figure class="medium-img">
             <img src="images/bordeaux.jpg" alt="">
-        <figcaption>Bordeaux, France</figcaption>
+        <figcaption>Bordeaux</figcaption>
         </figure>
         <h3>Bordeaux</h3>
         <p>Bordeaux is known as its beautiful region of southwest France. It has more than 300 places and buildings that has classified as a historical monument. Because of its romantic location and environment, Bordeaux is called the "Port of the Moon". UNESCO has reported that Bordeaux is a World Heritage Site. </p>

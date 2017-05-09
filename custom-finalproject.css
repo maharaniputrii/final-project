@@ -132,7 +132,6 @@ aside p {
     min-width: 8.5em;
     border: solid thin black;
     margin-bottom: 2%;
-    height: 220px;
 }
 
 .portrait{
@@ -325,7 +324,7 @@ nav ul li{
     padding: 2%;
 }
 
-nav ul li :link{
+nav ul li a:link{
     text-decoration: none;
     font-family: 'Josefin Sans', sans-serif;
     font-size: 10pt;
@@ -334,7 +333,7 @@ nav ul li :link{
 
 
 nav ul li a:hover{
-    color: #5781E2;
+    color: #328A0D;
     text-decoration: none;
 }
 
@@ -414,6 +413,22 @@ footer {
 
 footer p {
     padding: 1%;
+    color: #fff;
+}
+
+footer a {
+    float: left;
+    padding: 1%;
+    color: #fff;
+}
+
+footer a:hover {
+    color: #328A0D;
+}
+
+
+
+footer a:visited{
     color: #fff;
 }
 /* ===================  Home Page        ==================================== */

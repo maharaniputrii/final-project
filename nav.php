@@ -10,9 +10,9 @@
         print '<a href="index.php">About us</a>';
         print '</li>';
         
-        
-    print '<div class="dropdown">';
-        print '<button class="dropbtn">Countries</button>';
+    print '<li>';
+   print '<div class="dropdown">';
+        print '<button class="dropbtn">Countries &#9660;</button>';
         print '<ul class="dropdown-content">';
         
         print '<li class="';
@@ -73,6 +73,7 @@
         
         print '</ul>';
     print '</div>';
+    print '</li>';
         
         
         print '<li class="';

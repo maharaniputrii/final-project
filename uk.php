@@ -5,15 +5,15 @@ include ("top.php");
     
     <aside class="float-right no-border">
         <div class="students">
-            <h1>Brazilian at UVM</h1>
+            <h1>British at UVM</h1>
             <figure class="portrait">
-                <img src="images/cristine.jpg" alt="Cristine Enoki">
+                <img src="images/kate.jpg" alt="Kate Foster">
                 <figcaption></figcaption>
             </figure>
-            <p>Name: Kate Foster</p>
-            <p>Age: 22 years old</p>
-            <p>Year: Exchange student</p>
-            <p>Hometown: Birmingham, UK</p>
+            <p>Kate Foster</p>
+            <p>22 years old</p>
+            <p>Exchange student</p>
+            <p>Birmingham, United Kingdom</p>
         </div>
         <div class="quote">
             <p>“Strange as it might sound I miss the public transport from the UK (which I never thought I’d say as it drives me crazy when I’m home) coming to the USA I’ve realised how amazing it actually is and how necessary it is for this country. It would be so much easier to travel!”</p>
@@ -60,7 +60,7 @@ include ("top.php");
         
         <h2>Tourism</h2>
         
-        <section class="tourism-left height">
+        <section class="tourism-left height-more">
         <figure class="medium-img left">
             <img src="images/tower-bridge.jpg" alt="">
         <figcaption>Tower Bridge, London</figcaption>
@@ -117,7 +117,7 @@ include ("top.php");
             <img src="images/scotch-eggs.jpg" alt="">
         <figcaption>Scotch eggs</figcaption>
         </figure>
-        
+        <p>Here are some of the food the UK is famous for:</p>
         <ul>
             <li>Tea, is one of Britain's most consumed products having a dense variety of types and it is usually served with milk. Drinking tea is something entrenched in the British culture from the tea break to the afternoon tea.</li>
             <li>Fish and Chips, the classic British dish, fried fish with French fries and malt vinegar and tatar sauce</li>
@@ -128,12 +128,12 @@ include ("top.php");
         
         
         
-        
-<?php
-include ("footer.php");
-?>   
+         
     </article>
 
+<?php
+include ("footer.php");
+?>  
 </body>
     
 </html>

@@ -3,27 +3,41 @@ include ("top.php");
 
 ?>
 
-<article>
+<aside class="float-right">
+    <p class="font-big">The University of Vermont accepts hundreds of students from all over the world every year!</p>
+    <p>This is a website made by two them.</p>
+    <p>Here you will find information about the home country of some of those international students.</p>
+</aside>
+<aside class="float-right">
+    <h1>Make Contributions!</h1>
+    <p>If you are an international student and want to be represented in this website with information about your home country, please fill out the form to receive more information about how to make this happen! We would love more contributions!</p>    
 
-    
-    <figure class="firstimg">
-        <img src="images/worldmap.jpg" alt="World Map">
+</aside>
+
+<aside class="firstimg no-border">
+    <figure>
+        <img src="images/worldmap1.jpg" alt="World Map">
                 <figcaption></figcaption>
     </figure>
+</aside>
+
     
-    <aside class="information">
-        <h1>This Website</h1>
+    <article>
+        
+    <h1>The University of Vermont</h1>
+        
+    <aside class="information float-right">
+        <h1>About this Website</h1>
         <p>International students are a great way to learn about different countries and cultures of all over the world. Because its their culture, their country.</p>
         <p>This website gives these students a chance to share things about their countries and about themselves.</p>
         <p>Living abroad, in a different culture, a lot of times in a different language can be very challenging, but it is an amazing experience. And it is nice telling people things about your country, your home that they did not know and sometimes change the stereotypes they had before about your country. And also learning about different countries from other international students is priceless, its so much better learning from someone who is actually from the place, from the culture.</p>
     </aside>
     
-        <p>The University of Vermont accepts hundreds of students from all over the world every year!</p>
-        <p>This is a website made by two of these students for all international students.</p>
-        <p>Here you will find information about the home country of some of us as well as something about each one of us.</p>
-        <p>If you are an international student and want to be represented in this website with information about your home country, please fill out the form to receive more information about how to make this happen! We would love more contributions!</p>
-   
-        <h1>The University of Vermont</h1>
+        
+    <figure class="img-uvm">
+        <img src="images/uvm.jpg" alt="">
+        <figcaption></figcaption>
+    </figure>
         
         <p>The University of Vermont,  informally known as UVM  (Universitas Viridis Montis, latin for University of the Green Mountains) is a public institution founded in 1791. It is set in a suburban area, in the city of Burlington, VT. Which is considered one of the best college towns in the country and is surrounded by mountains, lakes, rivers, forests and rolling pastures of the Vermont countryside.</p>
         <p>UVM academic program combines faculty-student relationships characteristic of small liberal arts colleges with the resources of a major research institution.</p>
@@ -38,11 +52,12 @@ include ("top.php");
         
         
         
-    <?php
-        include ("footer.php");
-    ?>   
+  
     </article>
 
+<?php
+include ("footer.php");
+?>  
 </body>
     
 </html>

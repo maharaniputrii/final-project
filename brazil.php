@@ -12,10 +12,10 @@ include ("top.php");
                 <img src="images/cristinenew.jpg" alt="Cristine Enoki">
                 <figcaption></figcaption>
             </figure>
-            <p>Name: Cristine Sudo Enoki</p>
-            <p>Age: 18 years old</p>
-            <p>Year: Freshman</p>
-            <p>Hometown: Ribeirao Preto, SP, Brazil</p>
+            <p>Cristine Sudo Enoki</p>
+            <p>18 years old</p>
+            <p>Freshman</p>
+            <p>Ribeirao Preto, SP, Brazil</p>
         </div>
         <div class="quote">
             <p>“One of the things I miss most about Brazil is the food. Only when I left I realized all the dishes that they don’t have here in the US. Such a shame, Americans don’t know what they’re missing out!”</p>
@@ -56,6 +56,7 @@ include ("top.php");
             <p>Total area: 8,515,767 km2</p>
             <p>Population: (2016 est.) 207,345,000</p>
         </aside>
+           
             
         <p>Brazil is the biggest country in South America and the fifth largest and the fifth most populous country in the world. It contains a large set of tropical and subtropical landscapes.</p>
         <p>Cultural and ethnical diversity is big in Brazil. Throughout its history Brazil had different waves of immigrants, Portuguese (the colonizers) initially and then Italian, German and from others European countries as well as Japanese during the 19th and 20th century. The natives Indians after colonization had its number decreased and now account for a very small percentage of the total population and African descendents are numerous because of the African slavery during colonization. Nowadays Brazil is a mix of all these different ethnicities and cultures, intercultural marriage is common which leads to a very diverse community. In addition Brazil has absorbed and integrated parts of the cultures of all these different people into the Brazilian culture.</p>
@@ -109,7 +110,7 @@ include ("top.php");
         </ul>
         
         <h2>Food</h2>
-        <p>Brazilian food is amazing! Some of the most famous dishes are:</p>
+        
         <figure class="small-img left">
             <img src="images/feijoada.jpg" alt="">
         <figcaption>"Feijoada"</figcaption>
@@ -131,6 +132,7 @@ include ("top.php");
         <figcaption>"Caipirinha"</figcaption>
         </figure>
         
+        <p>Brazilian food is amazing! Some of the most famous dishes are:</p>
         <ul>
             <li>“Feijoada”, a black bean and pork meat stew, Brazil’s most traditional dish</p></li>
             <li>“Churrasco”, the Brazilian barbecue not like any other barbecue you have ever eaten, big pieces of meat are roasted with charcoal and seasoned with rock salt</li>
@@ -139,11 +141,13 @@ include ("top.php");
             <li>"Caipirinha", Brazil's traditional drink, the original one is made with lime and "cachaça" (sugar cane liquor) having variations made with other fruits and liquor</li>
         </ul>
 
-    <?php
-        include ("footer.php");
-    ?>   
-    </article>
 
+    </article>
+ 
+
+<?php
+include ("footer.php");
+?>  
 </body>
     
 </html>

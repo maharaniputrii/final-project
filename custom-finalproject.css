@@ -106,7 +106,7 @@ figure{
 
 
 aside {
-    border: solid thin black;
+   border: ridge #4AB01E;
     margin-bottom: 2%;
     width: 30%;
     background-color: #f5f5f5;
@@ -116,7 +116,8 @@ aside h1, .students h1 {
     font-size: 16pt;
     margin: 0%;
     text-align: center;
-    background-color: #6fb750;
+    background-color: #4AB01E;
+    color: #f5f5f5;
 }
 
 aside p {
@@ -131,6 +132,7 @@ aside p {
     min-width: 8.5em;
     border: solid thin black;
     margin-bottom: 2%;
+    height: 220px;
 }
 
 .portrait{
@@ -232,6 +234,10 @@ figcaption{
     height: 20em;
 }
 
+.height-more {
+    height: 22em;
+}
+
 
 .small-img {
     float: left;
@@ -261,17 +267,44 @@ article ul li{
 .firstimg {
     width: 68%;
 }
+
+.font-big{
+    font-size: 14pt;
+}
+
+img{
+    width: 100%;
+}
+
+.no-appear {
+    margin-left: -300%;
+    color: #f5f5f5;
+    line-height: 0%;
+}
 /* ===================  Header Section  ==================================== */
 /* now i would have a section that corresponds to my html sections.          */
 header {
-    background-color: #6fb750;
+    background-color: #68c340;
     margin-bottom: 2%;
 }
 
-.logo img {
-    width: 75px;
-    float: left;
+header h1{
+    color: #fff;
+    font-size: 20pt;
+    padding: 1.4%;
 }
+
+.logo img {
+    width: 60px;
+    float: left;
+    margin-right: 1%;
+    margin-top: 0.2%;
+}
+
+.index-img img {
+    width: 100%;
+}
+
 
 /* ===================  Navigation Section  ================================= */
 
@@ -296,15 +329,22 @@ nav ul li :link{
     text-decoration: none;
     font-family: 'Josefin Sans', sans-serif;
     font-size: 10pt;
+    color: #ffffff;
 }
+
 
 nav ul li a:hover{
     color: #5781E2;
     text-decoration: none;
 }
 
+nav ul li a:visited{
+    color: #fff;
+}
+
 .activePage{
-    text-decoration: underline;
+    border-bottom: solid thin #fff;
+    padding-bottom: 1%;
 }
 
 
@@ -317,7 +357,7 @@ nav ul li a:hover{
     border: none;
     cursor: pointer;
     text-transform: uppercase;
-    background-color: #6fb750;
+    background-color: #68c340;
 }
 
 /* The container <div> - needed to position the dropdown content */
@@ -329,13 +369,14 @@ nav ul li a:hover{
 .dropdown button {
     font-family: 'Josefin Sans', sans-serif;
     font-size: 10pt;
+    color: #fff;
 }
 
 /* Dropdown Content (Hidden by Default) */
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #f9f9f9;
+    background-color: #68c340;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
@@ -344,14 +385,14 @@ nav ul li a:hover{
 
 /* Links inside the dropdown */
 .dropdown-content a {
-    color: black;
+    color: #fff;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
 }
 
 /* Change color of dropdown links on hover */
-.dropdown-content a:hover {background-color: #f1f1f1}
+.dropdown-content a:hover {background-color: #4AB01E;}
 
 /* Show the dropdown menu on hover */
 .dropdown:hover .dropdown-content {
@@ -360,12 +401,20 @@ nav ul li a:hover{
 
 /* Change the background color of the dropdown button when the dropdown content is shown */
 .dropdown:hover .dropbtn {
-    background-color: #3e8e41;
+    background-color: #4AB01E;
 }
 /* ===================  Footer Section  ================================= */
 
-footer{
+footer {
     font-style: italic;
+    text-align: right;
+    background: #68c340;
+    height: 40px;
+}
+
+footer p {
+    padding: 1%;
+    color: #fff;
 }
 /* ===================  Home Page        ==================================== */
 /* -------------------------------------------------------------------------- */
@@ -395,8 +444,9 @@ footer{
 }
 
 .contact, .checkbox, .personal, .comment {
-    border: solid thin #6fb750;
+    border: ridge #328A0D;
     clear: both;
+    margin-bottom: 2%;
 }
 
 .buttons {
@@ -405,8 +455,8 @@ footer{
 }
 
 .personal legend, .checkbox legend, .contact legend, .comment legend{
-    color: #6fb750;
-    font-size: 14pt;
+    color: #328A0D;
+    font-size: 12pt;
 }
 
 .radio legend, .listbox legend {
@@ -428,7 +478,7 @@ input [type=text]{
 #form input:focus,
 #form textarea:focus,  
 #form select:focus{
-    border: 1px solid #0C0;
+    border: 1px solid #68c340;
 }
 
 #form input:hover{
@@ -437,7 +487,7 @@ input [type=text]{
 
 input[type=submit]{
         width: 6em;
-        border-color:#f13170; 
+        border-color:#328A0D; 
 }
 
 input[type=submit]:hover{
@@ -450,7 +500,7 @@ input[type=submit]:hover{
 }
 
 #errors h2{
-    color: #f13170;
+    color: red;
 }
 
 #errors ol li{
@@ -459,7 +509,7 @@ input[type=submit]:hover{
 
 
 .form-message {
-    color: #f13170
+    color: #000;
 }
 
 .radio-field {
@@ -474,6 +524,9 @@ input[type=submit]:hover{
     width: 100%;
 }
 
+.form-heading {
+    width: 100%;
+}
 /* 
     Created on : Apr 2, 2017, 10:15:43 PM
     Author     : Cristine Enoki

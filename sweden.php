@@ -9,14 +9,14 @@ include ("top.php");
                 <img src="images/farzad.jpg" alt="Somin">
                 <figcaption></figcaption>
             </figure>
-            <p>Name: Farzad Ashouri</p>
-            <p>Age: 24 years old</p>
-            <p>Year: Exchange Student</p>
-            <p>Hometown: Norrköping, Sweden</p>
+            <p>Farzad Ashouri</p>
+            <p>24 years old</p>
+            <p>Exchange Student</p>
+            <p>Norrköping, Sweden</p>
         </div>
          <div class="quote">
             <p></p>
-            <p class="name">Cristine Enoki</p>
+            <p class="name">Farzad Ashouri</p>
         </div>
 
     </aside>
@@ -24,25 +24,25 @@ include ("top.php");
     <div class="flexslider">
             <ul class="slides">
                 <li>
-                    <img src="images/rio.jpg" alt="Rio de Janeiro, Brazil">
+                    <img src="images/sweden2.jpg" alt="">
                 </li>
                 <li>
-                    <img src="images/praia-ceara.jpg" alt="" >
+                    <img src="images/sweden3.jpg" alt="" >
                 </li>
                 <li>
-                    <img src="images/carnival.jpg" alt="" >
+                    <img src="images/stockholm-slider.jpg" alt="" >
                 </li>
             </ul>
         </div>
         
      
         <article>
-            <h1>SWEDEN</h1>
+            <h1>Sweden</h1>
             
             <aside class="information float-right">
             <h1>Sweden</h1>
             <figure class="flag">
-                <img src="images/flagbrasil.png" alt="Brazilian Flag">
+                <img src="images/flagsweden.png" alt="Brazilian Flag">
                 <figcaption></figcaption>
             </figure>
             <p>Official language: Swedish</p>
@@ -55,9 +55,8 @@ include ("top.php");
             
             <p>Sweden, or The Kingdom of Sweden, is a Scandivanian country in Northern Europe. Sweden is located in the continent of Europe. Even though Sweden is a member of the European Union, Sweden has its own currency, the Krona. </p>
             <p>Sweden is the third-largerst country in the European Union but the population in Sweden is really low than other parts of Europe.</p>
-            <p></p>
             <p>Sweden is good for outdoor activities such as skating, hiking, canoeing, cycling, skiing, and horse-riding. </p>
-            <p> </p>
+
             
 
         <h2>Tourism</h2>
@@ -65,8 +64,8 @@ include ("top.php");
         
         <section class="tourism-left">
         <figure class="medium-img">
-            <img src="images/copacabana.jpg" alt="">
-        <figcaption>Copacabana beach, Rio de Janeiro</figcaption>
+            <img src="images/stockholm.jpg" alt="">
+        <figcaption>Stockholm</figcaption>
         </figure>
         <h3>Stockholm</h3>
         <p>Not only as the Capital of Scandinavia, Stockholm also known as one of the most beautiful city in the world. In Stockholm, it is easy for tourists to go around the city, go shopping, eat some local foods, and can feel the freshness of the air!</p>
@@ -74,8 +73,8 @@ include ("top.php");
             
         <section class="tourism-right">
         <figure class="medium-img">
-            <img src="images/copacabana.jpg" alt="">
-        <figcaption>Copacabana beach, Rio de Janeiro</figcaption>
+            <img src="images/icehotel.jpg" alt="">
+        <figcaption>IceHotel, Jukkasjärv</figcaption>
         </figure>
         <h3>ICEHOTEL</h3>
         <p>Ice Hotel is located in Jukkasjärv. Ice Hotel is known as the biggest hotel in the world that is made from  ice and snow. This hotel offers some accomodation such as Arctic Trail, which could take you to experience the wilderness trails of Swedish Lapland's aboriginal people.    </p>
@@ -83,8 +82,8 @@ include ("top.php");
         
         <section class="tourism-left">
         <figure class="medium-img">
-            <img src="images/copacabana.jpg" alt="">
-        <figcaption>Copacabana beach, Rio de Janeiro</figcaption>
+            <img src="images/sigtuna.jpg" alt="">
+        <figcaption>Sigtuna</figcaption>
         </figure>
         <h3>Sigtuna</h3>
         <p>Sigtuna is the first town in Sweden. It is founded in AD 980. Sigtuna is only 45 minutes away from Stockholm by car.</p>
@@ -92,8 +91,8 @@ include ("top.php");
         
         <section class="tourism-right height">
         <figure class="medium-img">
-            <img src="images/copacabana.jpg" alt="">
-        <figcaption>Copacabana beach, Rio de Janeiro</figcaption>
+            <img src="images/vasa.jpg" alt="">
+        <figcaption>Vasa Museum, Stockholm</figcaption>
         </figure>
         <h3>Vasa Museum</h3>
         <p>Vasa Museum is located in Stockholm. It is the most popular museum in Sweden and has been attracted million visitors annually. In 1628, the Swedish Imperial Fleet, or the Vasa battle ship. sank on its maiden voyage. The ship lay below the icy waters for more than three centuries until in 1960, a salvage operation took place. </p>
@@ -114,6 +113,28 @@ include ("top.php");
         </ul>
         
         <h2>Food</h2>
+
+        <figure class="small-img left">
+            <img src="images/kottbullar.jpg" alt="">
+        <figcaption>"Köttbullar"</figcaption>
+        </figure>
+        <figure class="small-img left">
+            <img src="images/julskinka.jpg" alt="">
+        <figcaption>"Julskinka"</figcaption>
+        </figure>
+        <figure class="small-img left">
+            <img src="images/flygande.jpg" alt="">
+        <figcaption>"Flygande"</figcaption>
+        </figure>
+        <figure class="small-img left">
+            <img src="images/swedishheadcheese.jpg" alt="">
+        <figcaption>"Swedish Head-Cheese"</figcaption>
+        </figure>
+        <figure class="small-img left">
+            <img src="images/blodpudding.jpg" alt="">
+        <figcaption>"Blodpudding"</figcaption>
+        </figure>
+        <p class="no-appear">-</p>
         <p>Here are some dishes that are traditionally from Swedish : </p>
         <ul>
             <li>"köttbullar" or meatballs, is the most famous dish from Sweden. It serves with potatoes, cream sauce and lingonberry jam.</li>
@@ -122,11 +143,12 @@ include ("top.php");
             <li>“Swedish Head-Cheese”, is a chopped pork pulled soft from a boiled pig-head and mixed with the gelatin from the skull with carious spices.</li>
             <li>"Blodpudding", is a black sausage made from pig's blood and flour. Some people eat it with lingonberry jam.</li>
         </ul>
-    <?php
-        include ("footer.php");
-    ?>   
+      
     </article>
 
+<?php
+        include ("footer.php");
+    ?> 
 </body>
     
 </html>
